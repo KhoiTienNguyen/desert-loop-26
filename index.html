@@ -1,32 +1,85 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A ranked, image-led day-by-day guide for an October–November 2026 campervan loop through the Grand Canyon and southern Utah.">
-<title>Desert Loop 26 · Utah–Arizona Campervan Field Guide</title><style>
-:root{--ink:#241b16;--paper:#f4e6c9;--cream:#fff5dd;--sun:#f4b942;--rust:#b9472c;--red:#8e2f25;--blue:#386b73;--green:#516545;--violet:#4a405d;--line:rgba(50,34,24,.23);--shadow:8px 8px 0 rgba(59,35,22,.22)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Verdana,Geneva,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}img{display:block;width:100%}a{color:inherit;text-underline-offset:3px}.shell{width:min(1560px,100%);margin:auto;padding-inline:clamp(18px,4vw,72px)}h1,h2,h3,h4,p,figure{margin-top:0}h1,h2,h3,h4{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.035em}h1{font-size:clamp(4rem,10vw,9.5rem);line-height:.79;margin:18px 0 28px;text-wrap:balance}h2{font-size:clamp(4.2rem,9vw,9rem);line-height:.82;margin:0}h3{font-size:clamp(2.3rem,4.8vw,5rem);line-height:.94;margin:5px 0 12px}h4{font-size:clamp(1.7rem,2.5vw,2.7rem);line-height:1;margin:6px 0 13px}.kicker,.meta,.rank,.badge,.chapter-no,.day-stamp,.window-title,.hero-meta,.source,.tape-note span{font-family:'Courier New',ui-monospace,monospace;text-transform:uppercase;letter-spacing:.08em;font-weight:700}.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;z-index:100;background:#fff;padding:12px}
-.cover{min-height:100vh;position:relative;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;overflow:hidden;background:#1e1510;color:#fff}.cover>.photo{position:absolute;inset:0;margin:0;height:100%;z-index:0}.cover>.photo img{height:100%;object-fit:cover;object-position:center 58%}.cover>.photo:after,.chapter-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,10,8,.82) 0%,rgba(17,10,8,.32) 52%,rgba(17,10,8,.1)),linear-gradient(0deg,rgba(17,10,8,.65),transparent 55%)}.cover .photo figcaption,.chapter-photo figcaption{position:absolute;right:18px;bottom:12px;z-index:2;font:10px 'Courier New';color:rgba(255,255,255,.72)}.window-bar{position:relative;z-index:3;margin:18px;border:2px solid rgba(255,255,255,.78);border-bottom:0;height:38px;display:flex;align-items:center;padding:0 12px;background:rgba(30,20,14,.52);backdrop-filter:blur(5px)}.window-dot{width:14px;height:14px;border:2px solid #fff;margin-right:8px}.window-title{margin:auto;font-size:11px}.cover-copy{position:relative;z-index:2;align-self:end;padding:clamp(50px,8vw,110px) clamp(22px,7vw,110px)}.cover-copy .eyebrow{font:700 12px 'Courier New';letter-spacing:.18em;color:#ffd277}.cover-copy em{color:#ffd277;font-style:normal;text-shadow:5px 5px 0 var(--red)}.cover-deck{max-width:720px;font-size:clamp(1rem,1.6vw,1.35rem)}.hero-meta{display:flex;flex-wrap:wrap;gap:10px 24px;font-size:11px;margin-top:26px}.hero-meta span{border:1px solid rgba(255,255,255,.45);padding:9px 11px;background:rgba(22,14,10,.44)}
-.site-nav{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:22px;overflow-x:auto;padding:12px clamp(18px,4vw,72px);background:rgba(245,231,204,.96);border-bottom:2px solid var(--ink);box-shadow:0 4px 0 rgba(63,39,21,.12);white-space:nowrap}.site-nav>a{font:700 11px 'Courier New';text-decoration:none;text-transform:uppercase}.site-nav>a:first-child{background:var(--ink);color:#fff;padding:7px 10px}.site-nav a:hover{color:var(--rust)}
-.intro{padding-block:90px 70px}.intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,7vw,110px);align-items:end}.intro h2{font-size:clamp(3.2rem,7vw,7rem)}.intro-copy{font-size:1.08rem;max-width:720px}.intro-copy strong{color:var(--rust)}.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ink);border:2px solid var(--ink);margin-top:50px;box-shadow:var(--shadow)}.legend div{background:var(--cream);padding:22px}.legend b{display:block;font:700 12px 'Courier New';margin-bottom:8px}.legend p{margin:0;color:#6f5b4a;font-size:.9rem}.timeline{padding-block:40px 90px}.timeline h2{font-size:clamp(2.8rem,6vw,5rem);margin-bottom:28px}.timeline-rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(230px,1fr);overflow-x:auto;gap:10px;padding:0 0 14px;scroll-snap-type:x mandatory}.timeline-rail a{scroll-snap-align:start;min-width:0;border:2px solid var(--ink);background:var(--cream);padding:17px;text-decoration:none;box-shadow:4px 4px 0 rgba(50,31,20,.18)}.timeline-rail span,.timeline-rail b{font:700 11px 'Courier New';display:block}.timeline-rail b{color:var(--rust);margin:7px 0}.timeline-rail small{font:700 14px Georgia;line-height:1.2;display:block}
-.chapter{--accent:var(--rust);scroll-margin-top:45px}.palette-canyon{--accent:#bd5a32}.palette-monument{--accent:#9a352b}.palette-moab{--accent:#d1772f}.palette-reef{--accent:#57725a}.palette-bryce{--accent:#d9603c}.palette-zion{--accent:#5c4968}.chapter-hero{height:min(74vh,820px);min-height:540px;position:relative;overflow:hidden;background:#291d15;color:#fff}.chapter-photo{position:absolute;inset:0;margin:0;height:100%}.chapter-photo img{height:100%;object-fit:cover}.chapter-photo:after{background:linear-gradient(90deg,rgba(23,13,9,.82),rgba(23,13,9,.1)),linear-gradient(0deg,rgba(20,11,8,.72),transparent 60%)}.chapter-overlay{position:absolute;z-index:3;left:clamp(20px,6vw,100px);bottom:clamp(40px,8vw,100px);max-width:950px}.chapter-overlay p{font:700 12px 'Courier New';text-transform:uppercase;letter-spacing:.17em;margin:12px 0;color:#ffd185}.chapter-no{display:inline-block;background:var(--accent);padding:7px 10px;font-size:11px}.chapter-dates{font:700 12px 'Courier New';margin-top:18px}.motif{position:absolute;z-index:2;right:-3vw;bottom:-5vw;width:32vw;height:32vw;border:18px double rgba(255,231,181,.3);transform:rotate(12deg)}.palette-monument .motif{border-radius:0;clip-path:polygon(25% 0,75% 0,100% 100%,0 100%)}.palette-moab .motif{border-radius:50% 50% 0 0}.palette-reef .motif{transform:skew(-18deg) rotate(12deg)}.palette-bryce .motif{clip-path:polygon(0 0,10% 38%,20% 0,30% 55%,40% 0,50% 46%,60% 0,70% 62%,80% 0,90% 45%,100% 0,100% 100%,0 100%)}.palette-zion .motif{width:20vw;height:50vw;border-width:24px;transform:none}.chapter-intro{padding-block:52px}.chapter-intro p{font:italic clamp(1.3rem,2.2vw,2rem) Georgia;max-width:980px;margin:0;border-left:8px solid var(--accent);padding-left:24px}
-.day{padding:58px 0 100px;border-top:3px solid var(--ink);scroll-margin-top:52px}.day-head{display:grid;grid-template-columns:175px minmax(0,1fr);gap:clamp(22px,5vw,70px);align-items:start}.day-stamp{border:2px solid var(--ink);background:var(--accent);color:#fff;box-shadow:5px 5px 0 var(--ink);padding:16px;transform:rotate(-1deg)}.day-stamp span,.day-stamp b{display:block}.day-stamp b{font-size:1.25rem;margin-top:6px}.day-head .kicker{color:var(--accent);font-size:11px;margin:0}.route{font:700 12px 'Courier New';max-width:780px}.tape-note{width:min(980px,calc(100% - 30px));margin:34px auto 44px;background:#f6d77e;padding:20px 24px;box-shadow:3px 5px 0 rgba(91,58,20,.22);transform:rotate(-.35deg);position:relative}.tape-note:before,.tape-note:after{content:'';position:absolute;width:55px;height:18px;background:rgba(255,248,207,.7);top:-8px}.tape-note:before{left:12%}.tape-note:after{right:12%;transform:rotate(3deg)}.tape-note span{font-size:10px}.tape-note p{margin:5px 0 0;font-size:.94rem}.attraction-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px;align-items:start}.attraction{grid-column:span 4;min-width:0;background:var(--cream);border:2px solid var(--ink);box-shadow:var(--shadow);overflow:hidden}.attraction.feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(360px,1.35fr) minmax(320px,.65fr)}.photo{margin:0;position:relative;background:#2d241e}.photo img{aspect-ratio:4/3;object-fit:cover}.feature-photo img{height:100%;min-height:540px;aspect-ratio:auto}.photo figcaption{position:absolute;left:8px;bottom:7px;background:rgba(28,18,13,.76);color:#fff;padding:5px 7px;font:9px 'Courier New'}.no-photo{aspect-ratio:4/3;display:grid;place-content:center;text-align:center;padding:24px;background-color:#d9c39e;background-image:radial-gradient(var(--accent) 1.2px,transparent 1.2px);background-size:8px 8px;color:var(--ink)}.no-photo span{font:700 10px 'Courier New';letter-spacing:.15em}.no-photo b{font:700 1.5rem Georgia;background:var(--paper);padding:7px}.attraction-copy{padding:23px}.rank-line{display:flex;align-items:center;justify-content:space-between;gap:10px}.rank{font-size:1.25rem;color:var(--accent)}.badge{font-size:9px;background:var(--accent);color:#fff;padding:5px 7px}.meta{font-size:9px;color:#776150;margin:14px 0 5px}.attraction-copy>p:not(.meta):not(.why){font-size:.94rem}.why{padding-top:14px;border-top:1px solid var(--line);font-size:.88rem;color:#5d4b3e}.source{font-size:9px;color:var(--accent)}
-.sources{padding-block:100px;background:#30231d;color:#f7e9cc}.sources-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px}.sources h2{font-size:clamp(3rem,6vw,6rem)}.source-list{list-style:none;padding:0;margin:0;columns:2;column-gap:36px}.source-list li{break-inside:avoid;border-bottom:1px solid rgba(255,255,255,.2);padding:10px 0}.source-list a{font-size:.86rem}.source-list span{display:block;color:#c8ae8a;font:9px 'Courier New';text-transform:uppercase}.footer{padding:32px;background:#17110e;color:#d8c6a5;font:10px 'Courier New';text-align:center}
-@media(max-width:1050px){.attraction{grid-column:span 6}.intro-grid,.sources-grid{grid-template-columns:1fr}.source-list{columns:1}.chapter-hero{min-height:500px}}
-@media(max-width:720px){.shell{padding-inline:16px}.cover{min-height:780px}.window-bar{margin:10px}.cover-copy{width:100%;min-width:0;max-width:100vw;padding:80px 20px 45px}.cover h1{font-size:clamp(3.5rem,17.5vw,5.8rem)}.site-nav{padding-inline:16px;gap:6px}.site-nav>a{min-height:44px;display:inline-flex;align-items:center;padding:7px 10px}.intro{padding-block:66px 45px}.legend{grid-template-columns:1fr}.timeline-rail{grid-auto-columns:82%}.chapter-hero{height:68vh;min-height:540px}.chapter-photo img{object-position:center}.chapter-overlay{left:18px;right:18px;bottom:42px}.chapter-overlay h2{font-size:clamp(4.2rem,19vw,6.6rem)}.motif{width:52vw;height:52vw}.day{padding-block:45px 72px}.day-head{grid-template-columns:1fr;gap:24px}.day-stamp{width:max-content;max-width:100%}.tape-note{margin-top:28px}.attraction-grid{display:block}.attraction{margin-bottom:24px}.attraction.feature{display:block}.feature-photo img,.photo img{height:auto;min-height:0;aspect-ratio:auto;object-fit:contain}.no-photo{aspect-ratio:1.25}.source-list{columns:1}.sources{padding-block:70px}.photo figcaption{position:static;background:#2b211b}.attraction-copy{padding:20px}}
-@media(max-width:600px){a:not(.skip-link){display:inline-flex;align-items:center;min-height:44px;padding-block:10px;margin-block:-10px}.timeline-rail a{display:block;margin-block:0;padding-block:17px}.photo figcaption a{margin-block:0;padding-block:10px}.source-list li{padding-block:4px}.source-list a{margin-block:0;padding-block:12px}.skip-link:focus{display:inline-flex;align-items:center;min-height:44px}}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A ranked, image-led day-by-day guide for an October–November 2026 campervan loop through the Grand Canyon and southern Utah."><title>Desert Loop 26 · Utah–Arizona Campervan Field Guide</title><style>
+:root{--ink:#241914;--paper:#f4e5c6;--cream:#fff4da;--sun:#f5bd4c;--rust:#bd522f;--red:#8d2d24;--blue:#39747c;--green:#4f6a51;--violet:#5b4a70;--line:rgba(48,31,21,.24);--shadow:8px 8px 0 rgba(59,35,22,.22);--micro:.8125rem;--label:.875rem;--small:.9375rem;--body:1rem}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Verdana,Geneva,system-ui,sans-serif;font-size:var(--body);line-height:1.6;overflow-x:hidden}img{display:block;width:100%}a{color:inherit;text-underline-offset:3px}.shell{width:min(1560px,100%);margin:auto;padding-inline:clamp(18px,4vw,72px)}h1,h2,h3,h4,p,figure{margin-top:0}h1,h2,h3,h4{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.035em}h1{font-size:clamp(4.4rem,9vw,9rem);line-height:.82;margin:18px 0 28px;text-wrap:balance}h2{font-size:clamp(3.7rem,7.3vw,7.4rem);line-height:.94;margin:0;text-wrap:balance}h3{font-size:clamp(2.25rem,4.5vw,4.7rem);line-height:1;margin:5px 0 14px;text-wrap:balance}h4{font-size:clamp(1.7rem,2.4vw,2.6rem);line-height:1.06;margin:6px 0 13px}.kicker,.meta,.rank,.badge,.chapter-no,.day-stamp,.window-title,.hero-meta,.source,.tape-note span,.weather-label,.note-number{font-family:'Courier New',ui-monospace,monospace;text-transform:uppercase;letter-spacing:.075em;font-weight:700}.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;z-index:100;background:#fff;padding:12px}
+.photo{margin:0;position:relative;background:#2d241e}.cover{min-height:100svh;position:relative;overflow:hidden;background:#1e1510;color:#fff}.cover>.cover-bg{position:absolute;inset:0;height:100%;z-index:0}.cover>.cover-bg img{height:100%;object-fit:cover;object-position:44% 66%;filter:saturate(1.08) contrast(1.04)}.cover>.cover-bg:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,10,8,.79) 0%,rgba(17,10,8,.55) 37%,rgba(17,10,8,.08) 66%),linear-gradient(0deg,rgba(17,10,8,.68),transparent 62%)}.window-bar{position:absolute;z-index:5;top:18px;left:18px;right:18px;min-height:48px;border:2px solid rgba(255,244,220,.86);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:6px 12px;background:rgba(35,23,17,.72);backdrop-filter:blur(7px);box-shadow:0 5px 0 rgba(0,0,0,.25)}.window-controls{display:flex;gap:7px}.window-dot{width:14px;height:14px;border:2px solid #fff;background:#bd522f}.window-dot:nth-child(2){background:#f5bd4c}.window-title{font-size:var(--micro);text-align:center}.window-route{font:700 var(--micro) 'Courier New';background:#fff2d3;color:var(--ink);padding:5px 9px}.cover-copy{position:absolute;z-index:3;left:clamp(22px,6vw,100px);bottom:clamp(42px,7vw,95px);width:min(46vw,720px)}.cover-copy .eyebrow{font:700 var(--label) 'Courier New';letter-spacing:.16em;color:#ffd277}.cover-copy em{color:#ffd277;font-style:normal;text-shadow:5px 5px 0 var(--red)}.cover-deck{max-width:660px;font-size:clamp(1.05rem,1.35vw,1.35rem)}.hero-meta{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:var(--micro);margin-top:24px}.hero-meta span{border:1px solid rgba(255,255,255,.55);padding:9px 11px;background:rgba(22,14,10,.55)}.postcard-stack{position:absolute;z-index:4;right:clamp(30px,6vw,110px);top:15%;width:min(42vw,690px);height:72%}.postcard{position:absolute;width:56%;padding:9px 9px 34px;background:#fff5dd;color:var(--ink);box-shadow:12px 15px 22px rgba(0,0,0,.32);border:1px solid #c8ac7c}.postcard img{height:100%;object-fit:cover}.postcard figcaption{position:absolute;left:14px;bottom:8px;font:700 var(--micro) 'Courier New';letter-spacing:.04em}.postcard.p1{right:2%;top:0;height:45%;transform:rotate(5deg)}.postcard.p2{left:0;top:18%;height:43%;transform:rotate(-7deg)}.postcard.p3{right:3%;bottom:4%;height:43%;transform:rotate(7deg)}.postcard.p4{left:5%;bottom:0;height:42%;transform:rotate(-3deg)}
+.site-nav{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:20px;overflow-x:auto;padding:11px clamp(18px,4vw,72px);background:rgba(245,231,204,.97);border-bottom:2px solid var(--ink);box-shadow:0 4px 0 rgba(63,39,21,.12);white-space:nowrap}.site-nav>a{font:700 var(--micro) 'Courier New';text-decoration:none;text-transform:uppercase}.site-nav>a:first-child{background:var(--ink);color:#fff;padding:7px 10px}.site-nav a:hover{color:var(--rust)}
+.route-overview{padding:86px 0 110px;background-color:#ead6ad;background-image:radial-gradient(rgba(83,54,33,.13) 1px,transparent 1px);background-size:9px 9px}.route-intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:end;margin-bottom:42px}.route-intro h2{font-size:clamp(3.2rem,6vw,6.2rem)}.route-intro p:last-child{font-size:1.05rem;max-width:760px}.map-board{position:relative;height:3100px;max-width:1280px;margin:auto;border:3px solid var(--ink);background:#d9bd87;box-shadow:14px 15px 0 rgba(62,39,22,.23);overflow:hidden;background-image:repeating-radial-gradient(ellipse at 30% 12%,transparent 0 24px,rgba(78,56,34,.11) 25px 27px,transparent 28px 42px)}.map-board:before{content:'NV  ·  AZ  ·  UT';position:absolute;right:3%;top:1%;font:700 clamp(2rem,5vw,5rem) Georgia;color:rgba(70,43,27,.12);letter-spacing:.12em}.route-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.route-shadow{fill:none;stroke:rgba(56,35,21,.25);stroke-width:2.2;stroke-dasharray:1.2 1.2}.route-line{fill:none;stroke:#9b3e2a;stroke-width:.75;stroke-dasharray:1.2 1.4;stroke-linecap:round}.route-note{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-4%);width:min(34%,380px);background:#fff0c8;border:2px solid var(--ink);padding:13px;text-decoration:none;box-shadow:7px 8px 0 rgba(61,37,20,.22);z-index:3;transition:transform .2s}.route-note:nth-of-type(even){transform:translate(-50%,-4%) rotate(1.5deg)}.route-note:nth-of-type(odd){transform:translate(-50%,-4%) rotate(-1deg)}.route-note:hover{transform:translate(-50%,-6%) rotate(0);z-index:6}.route-note:before{content:'';position:absolute;width:64px;height:18px;left:50%;top:-10px;transform:translateX(-50%) rotate(-2deg);background:rgba(255,246,196,.75)}.route-note .note-photo{height:115px;margin:8px 0 11px}.route-note .note-photo img{height:100%;object-fit:cover}.route-note>strong{font:700 clamp(1.15rem,1.7vw,1.55rem)/1.05 Georgia;display:block}.route-note>small{display:block;font-size:var(--micro);margin-top:5px;color:#6e503c}.note-number{font-size:var(--micro);color:var(--rust)}.mini-weather{display:flex;gap:9px;align-items:center;margin-top:10px;padding-top:8px;border-top:1px solid var(--line)}.mini-weather b{font-size:var(--label);white-space:nowrap}.mini-weather span{font-size:var(--micro);line-height:1.25}.route-van{position:absolute;z-index:5;left:14%;top:6%;font-size:2.4rem;filter:drop-shadow(3px 4px 0 rgba(56,34,20,.25));transform:translate(-50%,-50%) rotate(-8deg);will-change:left,top}.compass{position:absolute;right:5%;top:49%;width:130px;height:130px;border:3px double rgba(64,40,23,.45);border-radius:50%;display:grid;place-items:center;font:700 1.1rem 'Courier New';color:rgba(64,40,23,.55);transform:rotate(8deg)}.park-stamp{position:absolute;left:5%;top:31%;border:4px double rgba(91,48,27,.38);border-radius:50%;padding:18px 12px;font:700 var(--label) 'Courier New';color:rgba(91,48,27,.52);transform:rotate(-10deg)}.route-legend{position:absolute;right:4%;bottom:2%;font:700 var(--micro) 'Courier New';max-width:250px;background:#f2daa5;padding:12px;border:1px solid rgba(56,34,20,.45)}
+.chapter{--accent:var(--rust);scroll-margin-top:45px}.palette-canyon{--accent:#bd5a32}.palette-monument{--accent:#9a352b}.palette-moab{--accent:#d1772f}.palette-reef{--accent:#57725a}.palette-bryce{--accent:#d9603c}.palette-zion{--accent:#6c4d7c}.chapter-hero{height:min(74vh,820px);min-height:540px;position:relative;overflow:hidden;background:#291d15;color:#fff}.chapter-photo{position:absolute;inset:0;height:100%}.chapter-photo img{height:100%;object-fit:cover}.chapter-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,13,9,.81),rgba(23,13,9,.12)),linear-gradient(0deg,rgba(20,11,8,.7),transparent 60%)}.palette-zion .chapter-photo img{object-position:center 49%;filter:saturate(1.12)}.chapter-overlay{position:absolute;z-index:3;left:clamp(20px,6vw,100px);right:clamp(20px,6vw,100px);bottom:clamp(38px,7vw,90px);max-width:1220px}.chapter-overlay p{font:700 var(--label) 'Courier New';text-transform:uppercase;letter-spacing:.14em;margin:12px 0;color:#ffd185}.chapter-overlay h2{max-width:13ch}.chapter-overlay h2.long-title{font-size:clamp(3.2rem,6.1vw,6.2rem);line-height:.98;max-width:18ch}.chapter-no{display:inline-block;background:var(--accent);padding:8px 11px;font-size:var(--micro)}.chapter-dates{font:700 var(--micro) 'Courier New';margin-top:18px}.motif{position:absolute;z-index:2;right:-3vw;bottom:-5vw;width:32vw;height:32vw;border:18px double rgba(255,231,181,.3);transform:rotate(12deg)}.palette-monument .motif{clip-path:polygon(25% 0,75% 0,100% 100%,0 100%)}.palette-moab .motif{border-radius:50% 50% 0 0}.palette-reef .motif{transform:skew(-18deg) rotate(12deg)}.palette-bryce .motif{clip-path:polygon(0 0,10% 38%,20% 0,30% 55%,40% 0,50% 46%,60% 0,70% 62%,80% 0,90% 45%,100% 0,100% 100%,0 100%)}.palette-zion .motif{width:20vw;height:50vw;border-width:24px;transform:none}.chapter-intro{padding-block:52px}.chapter-intro p{font:italic clamp(1.3rem,2.1vw,1.9rem) Georgia;max-width:1040px;margin:0;border-left:8px solid var(--accent);padding-left:24px}
+.day{padding:58px 0 100px;border-top:3px solid var(--ink);scroll-margin-top:52px}.day-head{display:grid;grid-template-columns:190px minmax(0,1fr);gap:clamp(22px,5vw,70px);align-items:start}.day-stamp{border:2px solid var(--ink);background:var(--accent);color:#fff;box-shadow:5px 5px 0 var(--ink);padding:16px;transform:rotate(-1deg);font-size:var(--label)}.day-stamp span,.day-stamp b{display:block}.day-stamp b{font-size:1.25rem;margin-top:6px}.day-head .kicker{color:var(--accent);font-size:var(--label);margin:0}.route{font:700 var(--small) 'Courier New';max-width:900px}.weather-card{display:grid;grid-template-columns:74px 1fr;gap:18px;align-items:center;width:min(980px,calc(100% - 30px));margin:28px auto;background:#d9e9e4;border:2px solid var(--ink);box-shadow:5px 6px 0 rgba(49,68,63,.23);padding:16px 20px}.weather-icon{font-size:2.5rem;text-align:center}.weather-label{display:block;font-size:var(--micro);color:#315e63}.weather-card strong{display:block;font-size:1.2rem}.weather-card strong i{font-size:var(--small);font-style:normal;color:#5b6865;margin-left:10px}.weather-card p{margin:3px 0 0;font-size:var(--small)}.weather-card a{font-size:var(--micro);color:#315e63}.tape-note{width:min(980px,calc(100% - 30px));margin:22px auto 44px;background:#f6d77e;padding:20px 24px;box-shadow:3px 5px 0 rgba(91,58,20,.22);transform:rotate(-.35deg);position:relative}.tape-note:before,.tape-note:after{content:'';position:absolute;width:55px;height:18px;background:rgba(255,248,207,.7);top:-8px}.tape-note:before{left:12%}.tape-note:after{right:12%;transform:rotate(3deg)}.tape-note span{font-size:var(--micro)}.tape-note p{margin:5px 0 0;font-size:var(--body)}.attraction-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px;align-items:start}.attraction{grid-column:span 4;min-width:0;background:var(--cream);border:2px solid var(--ink);box-shadow:var(--shadow);overflow:hidden}.attraction.feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(360px,1.35fr) minmax(320px,.65fr)}.attraction .photo img{aspect-ratio:4/3;object-fit:cover}.feature-photo img{height:100%;min-height:540px!important;aspect-ratio:auto!important}.no-photo{aspect-ratio:4/3;display:grid;place-content:center;text-align:center;padding:24px;background:#d9c39e;color:var(--ink)}.no-photo span{font:700 var(--micro) 'Courier New'}.no-photo b{font:700 1.5rem Georgia;background:var(--paper);padding:7px}.attraction-copy{padding:23px}.rank-line{display:flex;align-items:center;justify-content:space-between;gap:10px}.rank{font-size:1.25rem;color:var(--accent)}.badge{font-size:var(--micro);background:var(--accent);color:#fff;padding:6px 8px}.meta{font-size:var(--micro);color:#776150;margin:14px 0 5px}.attraction-copy>p:not(.meta):not(.why){font-size:var(--body)}.why{padding-top:14px;border-top:1px solid var(--line);font-size:var(--small);color:#5d4b3e}.source{font-size:var(--micro);color:var(--accent)}
+.sources{padding-block:90px;background:#30231d;color:#f7e9cc}.sources-grid{display:grid;grid-template-columns:.68fr 1.32fr;gap:60px}.sources h2{font-size:clamp(3rem,5.5vw,5.7rem)}.source-list{list-style:none;padding:0;margin:0;columns:2;column-gap:36px}.source-list li{break-inside:avoid;border-bottom:1px solid rgba(255,255,255,.2);padding:10px 0}.source-list a{font-size:var(--label)}.source-list span{display:block;color:#c8ae8a;font:var(--micro) 'Courier New';text-transform:uppercase}.photo-credit-panel{grid-column:1/-1;margin-top:28px;border-top:1px solid rgba(255,255,255,.3);padding-top:24px}.photo-credit-panel summary{cursor:pointer;font:700 var(--label) 'Courier New';text-transform:uppercase}.photo-credit-list{list-style:none;padding:18px 0 0;margin:0;columns:3;column-gap:28px}.photo-credit-list li{break-inside:avoid;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.13);font-size:var(--micro)}.photo-credit-list span{display:block;color:#c8ae8a;text-transform:capitalize}.footer{padding:32px;background:#17110e;color:#d8c6a5;font:var(--micro) 'Courier New';text-align:center}
+@media(max-width:1050px){.postcard-stack{right:20px;width:48vw}.cover-copy{width:48vw}.attraction{grid-column:span 6}.sources-grid{grid-template-columns:1fr}.source-list{columns:1}.photo-credit-list{columns:2}.chapter-hero{min-height:500px}.route-note{width:40%}}
+@media(max-width:760px){.shell{padding-inline:16px}.cover{min-height:960px}.window-bar{top:10px;left:10px;right:10px;grid-template-columns:auto 1fr}.window-route{display:none}.cover-copy{left:20px;right:20px;bottom:42px;width:auto}.cover h1{font-size:clamp(4.3rem,18vw,6.4rem)}.cover-deck{max-width:92%}.postcard-stack{top:11%;right:8px;width:82vw;height:45%}.postcard{width:52%;padding:6px 6px 29px}.postcard figcaption{font-size:.75rem}.site-nav{padding-inline:16px;gap:8px}.site-nav>a{min-height:44px;display:inline-flex;align-items:center;padding:7px 10px}.route-overview{padding-top:60px}.route-intro{grid-template-columns:1fr;gap:14px}.map-board{height:auto;padding:62px 16px 70px;display:grid;gap:24px}.route-svg{display:none}.route-note,.route-note:nth-of-type(even),.route-note:nth-of-type(odd){position:relative;left:auto;top:auto;transform:rotate(-1deg);width:100%}.route-note:nth-of-type(even){transform:rotate(1deg)}.route-note .note-photo{height:170px}.route-van{position:absolute;left:auto!important;top:14px!important;right:16px;transform:none}.compass,.park-stamp{display:none}.route-legend{position:static;max-width:none}.chapter-hero{height:68vh;min-height:540px}.chapter-overlay{left:18px;right:18px;bottom:40px}.chapter-overlay h2,.chapter-overlay h2.long-title{font-size:clamp(3.45rem,15.4vw,5.3rem);line-height:.98;max-width:100%}.motif{width:52vw;height:52vw}.day{padding-block:45px 72px}.day-head{grid-template-columns:1fr;gap:24px}.day-stamp{width:max-content;max-width:100%}.weather-card{grid-template-columns:55px 1fr;padding:15px}.weather-icon{font-size:2rem}.tape-note{margin-top:24px}.attraction-grid{display:block}.attraction{margin-bottom:24px}.attraction.feature{display:block}.feature-photo img,.attraction .photo img{height:auto!important;min-height:0!important;aspect-ratio:auto!important;object-fit:contain}.attraction-copy{padding:20px}.photo-credit-list{columns:1}.sources{padding-block:70px}}
+.route-van{z-index:2;pointer-events:none}.endpoint-weather{align-items:flex-start;flex-direction:column;gap:3px}.endpoint-weather b{white-space:normal}.weather-endpoints{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:5px 0 4px}.weather-endpoints>div{border:1px solid rgba(49,94,99,.35);background:rgba(255,255,255,.36);padding:9px}.weather-endpoints span{display:block;font:700 var(--micro) 'Courier New';text-transform:uppercase;color:#315e63}.weather-endpoints strong{font-size:1.05rem}.weather-endpoints a,.weather-basis{font-size:var(--micro)}.weather-basis{margin:5px 0 0!important;color:#526663}
+@media(max-width:760px){.postcard-stack{top:9%;height:40%}.postcard figcaption{font-size:var(--micro)}a:not(.skip-link):not(.route-note){display:inline-flex;align-items:center;min-height:44px}.source-list a,.photo-credit-list a{padding-block:8px}}
+@media(max-width:760px){.weather-endpoints{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.route-van{left:14%!important;top:6%!important}.route-note{transition:none}}
 </style></head>
 <body><a class="skip-link" href="#main">Skip to guide</a>
-<header class="cover" id="top"><figure class="photo "><img src="assets/images/production/cover-hero.jpg" alt="A desert highway leading toward Monument Valley" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/hniuowbXbBY" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
-  <div class="window-bar"><i class="window-dot"></i><i class="window-dot"></i><span class="window-title">DESERT_LOOP_26.GUIDE</span></div>
-  <div class="cover-copy"><p class="eyebrow">A campervan field guide · Southwest USA</p><h1>Desert<br><em>Loop 26</em></h1><p class="cover-deck">A warm-toned field guide to the Grand Canyon, Monument Valley and Utah&#x27;s red-rock parks. Sixty attraction ideas, ranked inside the days where they actually fit.</p>
-  <div class="hero-meta"><span>October 25–November 5, 2026</span><span>3 adults</span><span>12 calendar days · 6 landscape chapters</span></div></div></header>
-<nav class="site-nav" aria-label="Guide chapters"><a href="#top">⌂ Loop 26</a><a href="#route">Route</a><a href="#grand-canyon">Grand Canyon</a><a href="#monument-valley">Monument Valley</a><a href="#moab">Moab Country</a><a href="#capitol-highway12">Capitol Reef + Highway 12</a><a href="#bryce">Bryce Canyon</a><a href="#zion">Zion</a><a href="#sources">Sources</a></nav>
-<main id="main"><section class="intro shell"><div class="intro-grid"><div><p class="kicker">Read this first</p><h2>One anchor.<br>Then improvise.</h2></div><div class="intro-copy"><p><strong>Choose one anchor experience and one supporting stop on transfer days; use the full menu only on park days.</strong></p><p>The cards are already ordered: #01 is the highest-priority experience for that date, followed by realistic alternatives. A “swap” replaces the main plan; it does not sit on top of an already full day. Live road, weather, water and shuttle conditions still win.</p></div></div>
-<div class="legend"><div><b>#01 ANCHOR</b><p>Build the day around it.</p></div><div><b>#02–03 SUPPORT</b><p>Add when time, weather and energy agree.</p></div><div><b>SWAP / REPLACEMENT</b><p>Choose instead of another major activity.</p></div></div></section>
-<section class="timeline shell" id="route"><p class="kicker">The road in twelve frames</p><h2>Las Vegas out.<br>Zion home.</h2><div class="timeline-rail"><a href="#day-01"><span>Oct 25</span><b>LV-GC</b><small>Las Vegas to the South Rim</small></a><a href="#day-02"><span>Oct 26</span><b>GC-RIM</b><small>A full South Rim day</small></a><a href="#day-03"><span>Oct 27</span><b>GC-MV</b><small>Desert View Road to Monument Valley</small></a><a href="#day-04"><span>Oct 28</span><b>MV-MOAB</b><small>Monument Valley morning, Moab by dusk</small></a><a href="#day-05"><span>Oct 29</span><b>ARCH</b><small>Arches: fins, windows and one perfect span</small></a><a href="#day-06"><span>Oct 30</span><b>CANY-DHP</b><small>Island in the Sky to Dead Horse Point</small></a><a href="#day-07"><span>Oct 31</span><b>DHP-CARE</b><small>Dead Horse dawn, Capitol Reef afternoon</small></a><a href="#day-08"><span>Nov 1</span><b>HWY12-BRCA</b><small>Highway 12 to Bryce Canyon</small></a><a href="#day-09"><span>Nov 2</span><b>BRCA-ZION</b><small>Bryce morning, Zion by afternoon</small></a><a href="#day-10"><span>Nov 3</span><b>ZION-HIGH</b><small>The high view day</small></a><a href="#day-11"><span>Nov 4</span><b>ZION-RIVER</b><small>The river day—or the dry-land backup</small></a><a href="#day-12"><span>Nov 5</span><b>ZION-LV</b><small>Back to Las Vegas</small></a></div></section>
+<header class="cover" id="top"><figure class="photo cover-bg"><img src="assets/images/production/cover-hero.jpg" alt="Monument Valley and the road ahead" loading="eager" decoding="async" fetchpriority="high"></figure>
+  <div class="window-bar"><span class="window-controls"><i class="window-dot"></i><i class="window-dot"></i></span><span class="window-title">DESERT_LOOP_26.GUIDE</span><span class="window-route">LAS VEGAS → GRAND CANYON → ZION</span></div>
+  <div class="cover-copy"><p class="eyebrow">A campervan field guide · Southwest USA</p><h1>Desert<br><em>Loop 26</em></h1><p class="cover-deck">A warm-toned field guide to the Grand Canyon, Monument Valley and Utah&#x27;s red-rock parks. Ranked stops, realistic alternatives and weather-aware plans for every day.</p><div class="hero-meta"><span>October 25–November 5, 2026</span><span>12 days · 6 regions</span></div></div>
+  <div class="postcard-stack" aria-label="Trip highlights">
+    <figure class="postcard p1"><img src="assets/images/production/bryce-hero.jpg" alt="Bryce Canyon hoodoos at sunrise"><figcaption>Bryce · first light</figcaption></figure>
+    <figure class="postcard p2"><img src="assets/images/production/cover-postcard-campervan.jpg" alt="Campervan camped in a desert landscape"><figcaption>Camp · doors open</figcaption></figure>
+    <figure class="postcard p3"><img src="assets/images/production/delicate-arch.jpg" alt="Delicate Arch in warm light"><figcaption>Moab · Delicate Arch</figcaption></figure>
+    <figure class="postcard p4"><img src="assets/images/production/forrest-gump-point.jpg" alt="The road toward Monument Valley"><figcaption>US–163 · road day</figcaption></figure>
+  </div></header>
+<nav class="site-nav" aria-label="Guide chapters"><a href="#top">⌂ Loop 26</a><a href="#route">12-day route</a><a href="#grand-canyon">Grand Canyon</a><a href="#monument-valley">Monument Valley</a><a href="#moab">Moab Country</a><a href="#capitol-highway12">Capitol Reef + Highway 12</a><a href="#bryce">Bryce Canyon</a><a href="#zion">Zion</a><a href="#sources">Sources</a></nav>
+<main id="main"><section class="route-overview" id="route"><div class="shell route-intro"><div><p class="kicker">Trip overview</p><h2>Twelve days across the Southwest</h2></div><p>Each card marks the main destination for that day, its top-priority stop and the typical temperature range. Select a card to jump to the full plan. Weather values are seasonal planning normals, not forecasts.</p></div>
+<div class="map-board"><svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="route-shadow" d="M 14 6 C 42 7, 47 10, 58 13 S 42 19, 24 21 S 46 27, 64 29 S 43 35, 30 37 S 43 43, 60 45 S 38 51, 18 53 S 43 59, 62 61 S 43 67, 27 69 S 43 75, 60 77 S 42 83, 22 85 S 40 91, 58 93"/><path class="route-line" id="routePath" d="M 14 6 C 42 7, 47 10, 58 13 S 42 19, 24 21 S 46 27, 64 29 S 43 35, 30 37 S 43 43, 60 45 S 38 51, 18 53 S 43 59, 62 61 S 43 67, 27 69 S 43 75, 60 77 S 42 83, 22 85 S 40 91, 58 93"/></svg><a class="route-note note-1" href="#day-01" style="--x:14%;--y:6%" data-lat="36.0594" data-lon="-112.1097">
+      <span class="note-number">DAY 01 · Oct 25</span>
+      <figure class="photo note-photo"><img src="assets/images/production/mather-point.jpg" alt="Mather Point" loading="lazy" decoding="async"></figure>
+      <strong>Las Vegas to the South Rim</strong><small>Las Vegas → South Rim</small><div class="mini-weather endpoint-weather" aria-label="Typical weather by endpoint: Las Vegas 25/13° · South Rim 16/-1° Celsius"><b>☀ Las Vegas 25/13° · South Rim 16/-1°C</b><span>Warm start, freezing rim night</span></div>
+    </a><a class="route-note note-2" href="#day-02" style="--x:58%;--y:13%" data-lat="36.0594" data-lon="-112.1097">
+      <span class="note-number">DAY 02 · Oct 26</span>
+      <figure class="photo note-photo"><img src="assets/images/production/ooh-aah-point.jpg" alt="South Kaibab to Ooh Aah Point" loading="lazy" decoding="async"></figure>
+      <strong>A full South Rim day</strong><small>Grand Canyon South Rim</small><div class="mini-weather" aria-label="Typical weather: Cold dawn, mild afternoon"><b>◐ 16° / -2°C</b><span>Cold dawn, mild afternoon</span></div>
+    </a><a class="route-note note-3" href="#day-03" style="--x:24%;--y:21%" data-lat="36.9829" data-lon="-110.1113">
+      <span class="note-number">DAY 03 · Oct 27</span>
+      <figure class="photo note-photo"><img src="assets/images/production/desert-view.jpg" alt="Desert View Watchtower" loading="lazy" decoding="async"></figure>
+      <strong>Desert View Road to Monument Valley</strong><small>South Rim → Monument Valley</small><div class="mini-weather endpoint-weather" aria-label="Typical weather by endpoint: South Rim 15/-1° · Monument Valley 20/6° Celsius"><b>↗ South Rim 15/-1° · Monument Valley 20/6°C</b><span>Layer for wind and sunset</span></div>
+    </a><a class="route-note note-4" href="#day-04" style="--x:64%;--y:29%" data-lat="38.5733" data-lon="-109.5498">
+      <span class="note-number">DAY 04 · Oct 28</span>
+      <figure class="photo note-photo"><img src="assets/images/production/valley-drive-tour.jpg" alt="Navajo-guided Valley Drive tour" loading="lazy" decoding="async"></figure>
+      <strong>Monument Valley morning, Moab by dusk</strong><small>Monument Valley → Moab</small><div class="mini-weather" aria-label="Typical weather: Sunny with a cool evening"><b>☀ 20° / 6°C</b><span>Sunny with a cool evening</span></div>
+    </a><a class="route-note note-5" href="#day-05" style="--x:30%;--y:37%" data-lat="38.7331" data-lon="-109.5925">
+      <span class="note-number">DAY 05 · Oct 29</span>
+      <figure class="photo note-photo"><img src="assets/images/production/delicate-arch.jpg" alt="Delicate Arch" loading="lazy" decoding="async"></figure>
+      <strong>Arches: fins, windows and one perfect span</strong><small>Arches National Park</small><div class="mini-weather" aria-label="Typical weather: High-desert temperature swing"><b>☀ 22° / 5°C</b><span>High-desert temperature swing</span></div>
+    </a><a class="route-note note-6" href="#day-06" style="--x:60%;--y:45%" data-lat="38.487" data-lon="-109.7408">
+      <span class="note-number">DAY 06 · Oct 30</span>
+      <figure class="photo note-photo"><img src="assets/images/production/grand-view-canyonlands.jpg" alt="Grand View Point" loading="lazy" decoding="async"></figure>
+      <strong>Island in the Sky to Dead Horse Point</strong><small>Canyonlands → Dead Horse Point</small><div class="mini-weather" aria-label="Typical weather: Cooler on the mesa"><b>↗ 17° / 2°C</b><span>Cooler on the mesa</span></div>
+    </a><a class="route-note note-7" href="#day-07" style="--x:18%;--y:53%" data-lat="38.2888" data-lon="-111.2478">
+      <span class="note-number">DAY 07 · Oct 31</span>
+      <figure class="photo note-photo"><img src="assets/images/production/hickman-bridge.jpg" alt="Hickman Bridge" loading="lazy" decoding="async"></figure>
+      <strong>Dead Horse dawn, Capitol Reef afternoon</strong><small>Capitol Reef</small><div class="mini-weather" aria-label="Typical weather: Crisp morning, cool afternoon"><b>◐ 14° / -1°C</b><span>Crisp morning, cool afternoon</span></div>
+    </a><a class="route-note note-8" href="#day-08" style="--x:62%;--y:61%" data-lat="37.6283" data-lon="-112.1677">
+      <span class="note-number">DAY 08 · Nov 1</span>
+      <figure class="photo note-photo"><img src="assets/images/production/highway12-hogsback.jpg" alt="Highway 12 drive: Boulder Mountain to the Hogsback" loading="lazy" decoding="async"></figure>
+      <strong>Highway 12 to Bryce Canyon</strong><small>Highway 12 → Bryce</small><div class="mini-weather endpoint-weather" aria-label="Typical weather by endpoint: Fruita 14/-1° · Bryce 7/-5° Celsius"><b>❄ Fruita 14/-1° · Bryce 7/-5°C</b><span>Freezing risk on the high road</span></div>
+    </a><a class="route-note note-9" href="#day-09" style="--x:27%;--y:69%" data-lat="37.2" data-lon="-112.987">
+      <span class="note-number">DAY 09 · Nov 2</span>
+      <figure class="photo note-photo"><img src="assets/images/production/queens-navajo.jpg" alt="Queen&#x27;s Garden + Navajo combination" loading="lazy" decoding="async"></figure>
+      <strong>Bryce morning, Zion by afternoon</strong><small>Bryce → Zion</small><div class="mini-weather" aria-label="Typical weather: Cold rim, possible snow or ice"><b>❄ 7° / -5°C</b><span>Cold rim, possible snow or ice</span></div>
+    </a><a class="route-note note-10" href="#day-10" style="--x:60%;--y:77%" data-lat="37.2592" data-lon="-112.95">
+      <span class="note-number">DAY 10 · Nov 3</span>
+      <figure class="photo note-photo"><img src="assets/images/production/scout-lookout.jpg" alt="Scout Lookout via West Rim Trail" loading="lazy" decoding="async"></figure>
+      <strong>West Rim Trail and Zion Canyon views</strong><small>Zion high country</small><div class="mini-weather" aria-label="Typical weather: Mild canyon, chilly shade"><b>☀ 18° / 3°C</b><span>Mild canyon, chilly shade</span></div>
+    </a><a class="route-note note-11" href="#day-11" style="--x:22%;--y:85%" data-lat="37.2852" data-lon="-112.9477">
+      <span class="note-number">DAY 11 · Nov 4</span>
+      <figure class="photo note-photo"><img src="assets/images/production/the-narrows.jpg" alt="The Narrows, bottom-up" loading="lazy" decoding="async"></figure>
+      <strong>The Narrows, with dry-land alternatives</strong><small>Zion Canyon</small><div class="mini-weather" aria-label="Typical weather: Cold water is the deciding factor"><b>≈ 18° / 3°C</b><span>Cold water is the deciding factor</span></div>
+    </a><a class="route-note note-12" href="#day-12" style="--x:58%;--y:90%" data-lat="36.1699" data-lon="-115.1398">
+      <span class="note-number">DAY 12 · Nov 5</span>
+      <figure class="photo note-photo"><img src="assets/images/production/parus-dawn.jpg" alt="Pa&#x27;rus Trail dawn walk" loading="lazy" decoding="async"></figure>
+      <strong>Zion morning and the drive to Las Vegas</strong><small>Zion → Las Vegas</small><div class="mini-weather endpoint-weather" aria-label="Typical weather by endpoint: Zion 18/3° · Las Vegas 22/11° Celsius"><b>☀ Zion 18/3° · Las Vegas 22/11°C</b><span>Cool Zion start, warm Vegas finish</span></div>
+    </a><div class="route-van" id="routeVan" aria-hidden="true">🚐</div><div class="compass">N<br>✦</div><div class="park-stamp">NATIONAL<br>PARK LOOP</div><div class="route-legend">The route line is an itinerary overview. Use live navigation, park alerts and road-condition checks while travelling.</div></div></section>
 <section class="chapter palette-canyon" id="grand-canyon">
       <header class="chapter-hero">
-        <figure class="photo chapter-photo"><img src="assets/images/production/grand-canyon-hero.jpg" alt="Grand Canyon" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/KAbpjQEOHeY" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
-        <div class="chapter-overlay"><span class="chapter-no">AREA 01</span><p>Rim light / deep time</p><h2>Grand Canyon</h2><div class="chapter-dates">Sun · Oct 25 — Tue · Oct 27</div></div>
+        <figure class="photo chapter-photo"><img src="assets/images/production/grand-canyon-hero.jpg" alt="Grand Canyon" loading="lazy" decoding="async"></figure>
+        <div class="chapter-overlay"><span class="chapter-no">AREA 01</span><p>South Rim viewpoints and canyon trails</p><h2 class="">Grand Canyon</h2><div class="chapter-dates">Sun · Oct 25 — Tue · Oct 27</div></div>
         <div class="motif" aria-hidden="true"></div>
       </header>
       <div class="chapter-intro shell"><p>Begin slowly. The first evening is for arrival; the full day is for one real walk and a sequence of rim viewpoints; the eastbound departure is its own scenic day.</p></div>
@@ -35,36 +88,41 @@
         <div class="day-stamp"><span>Sun · Oct 25</span><b>LV-GC</b></div>
         <div><p class="kicker">Transfer day</p><h3>Las Vegas to the South Rim</h3><p class="route">Las Vegas → Mather Campground · 275–285 mi · 4.5–5 hr before stops</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>Treat every stop below as optional. Rental pickup, groceries and the vehicle inspection matter more than forcing sunset.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="rim viewpoint">
-      <figure class="photo feature-photo"><img src="assets/images/production/mather-point.jpg" alt="Mather Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/HnfAzpOUHls" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">☀</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <div class="weather-endpoints"><div><span>Las Vegas</span><strong>25° / 13°C <i>77° / 56°F</i></strong><a href="https://www.weather.gov/vef/lasvegas_climate_book" target="_blank" rel="noreferrer">Las Vegas Climate Book — Daily Temperature Normals ↗</a></div><div><span>South Rim</span><strong>16° / -1°C <i>61° / 30°F</i></strong><a href="https://www.nps.gov/grca/learn/nature/weather.htm" target="_blank" rel="noreferrer">Grand Canyon Weather ↗</a></div></div><p>Las Vegas is usually warm; the South Rim can fall below freezing after dark.</p><p class="weather-basis">Late-October 1991–2020 normal for Las Vegas airport; October South Rim monthly normal.</p></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>Treat every stop below as optional. Rental pickup, groceries and the vehicle inspection matter more than forcing sunset.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/mather-point.jpg" alt="Mather Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">rim viewpoint · 30–60 min</p>
         <h4>Mather Point</h4>
         <p>The cleanest first encounter with the canyon: broad terraces, branching side canyons and a short paved approach from the visitor center.</p>
-        <p class="why"><b>Why it earns the stop.</b> Go only if you reach the rim with safe daylight; otherwise save the reveal for morning.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/things2do.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Things to Do ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Go only if you reach the rim with safe daylight; otherwise save the reveal for morning.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/things2do.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="viewpoint and geology exhibit">
-      <figure class="photo "><img src="assets/images/production/yavapai-point.jpg" alt="Yavapai Point &amp; Geology Museum" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://grandcanyon.com/poi/yavapai-geology-museum/" target="_blank" rel="noreferrer">grandcanyon.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/yavapai-point.jpg" alt="Yavapai Point &amp; Geology Museum" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">smart sunset fallback</span></div>
         <p class="meta">viewpoint and geology exhibit · 45–75 min</p>
         <h4>Yavapai Point &amp; Geology Museum</h4>
         <p>A close, legible view into the inner canyon paired with displays that make the rock layers easier to read.</p>
-        <p class="why"><b>Why it earns the stop.</b> Near Mather and easier to abandon quickly if pickup runs late.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/things2do.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Things to Do ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Near Mather and easier to abandon quickly if pickup runs late.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/things2do.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="historic-road town">
-      <figure class="photo "><img src="assets/images/production/seligman-route66.jpg" alt="Seligman Route 66" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Seligman.-_Snow_car,_sur_la_Route_66.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/seligman-route66.jpg" alt="Seligman Route 66" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">only with time</span></div>
         <p class="meta">historic-road town · 20–45 min</p>
         <h4>Seligman Route 66</h4>
         <p>A neon-and-diner fragment of old Route 66 that fits the trip&#x27;s retro road-movie mood.</p>
-        <p class="why"><b>Why it earns the stop.</b> A character stop, not a reason to arrive at camp after dark.</p>
-        <a class="source" href="https://historic66az.com/" target="_blank" rel="noreferrer">Plan from Historic Route 66 Association of Arizona ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A character stop, not a reason to arrive at camp after dark.</p>
+        <a class="source" href="https://historic66az.com/" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section><section class="day" id="day-02">
@@ -72,56 +130,61 @@
         <div class="day-stamp"><span>Mon · Oct 26</span><b>GC-RIM</b></div>
         <div><p class="kicker">Full park day</p><h3>A full South Rim day</h3><p class="route">Mather base · shuttle and walking day</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>Pick either an into-the-canyon hike or a longer Hermit Road walk as the anchor. Do not combine both ambitious versions.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="steep canyon hike">
-      <figure class="photo feature-photo"><img src="assets/images/production/ooh-aah-point.jpg" alt="South Kaibab to Ooh Aah Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/AF0qe_LaF1A" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">◐</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <strong>16° / -2°C <i>61° / 28°F</i></strong><p>Dry fall weather is common, but wind and an early snow shower are possible at 7,000 feet.</p><a href="https://www.nps.gov/grca/learn/nature/weather.htm" target="_blank" rel="noreferrer">Grand Canyon Weather ↗</a></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>Pick either an into-the-canyon hike or a longer Hermit Road walk as the anchor. Do not combine both ambitious versions.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/ooh-aah-point.jpg" alt="South Kaibab to Ooh Aah Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">steep canyon hike · 2–3 hr</p>
         <h4>South Kaibab to Ooh Aah Point</h4>
         <p>A short but serious descent to an exposed saddle with one of the quickest immersive views below the rim.</p>
-        <p class="why"><b>Why it earns the stop.</b> Best visual return for a half-day, but the climb back is steep and there is no water on trail.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/day-hiking.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Day Hiking ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Best visual return for a half-day, but the climb back is steep and there is no water on trail.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/day-hiking.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="shuttle viewpoints and rim walk">
-      <figure class="photo "><img src="assets/images/production/hopi-point.jpg" alt="Hopi Point + Rim Trail" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Grand_Canyon_Hopi_Point_with_rainbow_2013.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/hopi-point.jpg" alt="Hopi Point + Rim Trail" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">best no-descent plan</span></div>
         <p class="meta">shuttle viewpoints and rim walk · 2–4 hr</p>
         <h4>Hopi Point + Rim Trail</h4>
         <p>Ride the Red Route, then walk selected rim sections between overlooks for changing Colorado River views.</p>
-        <p class="why"><b>Why it earns the stop.</b> Hopi gives a wide west-facing panorama; the shuttle lets the group tune distance and weather exposure.</p>
-        <a class="source" href="https://home.nps.gov/grca/learn/management/hermit.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Hermit Road ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Hopi gives a wide west-facing panorama; the shuttle lets the group tune distance and weather exposure.</p>
+        <a class="source" href="https://home.nps.gov/grca/learn/management/hermit.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="quiet rim walk">
-      <figure class="photo "><img src="assets/images/production/pima-point.jpg" alt="Pima Point to Hermits Rest" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Sunrise_from_Pima_Point_-_Grand_Canyon_National_Park.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/pima-point.jpg" alt="Pima Point to Hermits Rest" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">scenic extension</span></div>
         <p class="meta">quiet rim walk · 1.5–2.5 hr</p>
         <h4>Pima Point to Hermits Rest</h4>
         <p>A quieter western segment where the river can sometimes be heard far below before ending at the historic rest house.</p>
-        <p class="why"><b>Why it earns the stop.</b> Ideal add-on after a shorter Hermit Road circuit.</p>
-        <a class="source" href="https://home.nps.gov/grca/learn/management/hermit.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Hermit Road ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Ideal add-on after a shorter Hermit Road circuit.</p>
+        <a class="source" href="https://home.nps.gov/grca/learn/management/hermit.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="paved interpretive rim walk">
-      <figure class="photo "><img src="assets/images/production/trail-of-time.jpg" alt="Trail of Time" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://tot.unm.edu/" target="_blank" rel="noreferrer">tot.unm.edu ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/trail-of-time.jpg" alt="Trail of Time" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">easy alternative</span></div>
         <p class="meta">paved interpretive rim walk · 1–2 hr</p>
         <h4>Trail of Time</h4>
         <p>A geology walk between Yavapai and Grand Canyon Village that turns the canyon&#x27;s age into a walkable timeline.</p>
-        <p class="why"><b>Why it earns the stop.</b> The best low-exertion option when wind, ice or tired legs rule out a descent.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/things2do.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Things to Do ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The best low-exertion option when wind, ice or tired legs rule out a descent.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/things2do.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="steep canyon hike">
-      <figure class="photo "><img src="assets/images/production/bright-angel.jpg" alt="Bright Angel to 1.5-Mile Resthouse" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park,_Top_of_Bright_Angel_Trail_0069p_-_Flickr_-_Grand_Canyon_NPS.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/bright-angel.jpg" alt="Bright Angel to 1.5-Mile Resthouse" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">swap for South Kaibab</span></div>
         <p class="meta">steep canyon hike · 3–5 hr</p>
         <h4>Bright Angel to 1.5-Mile Resthouse</h4>
         <p>A historic trail dropping through the upper rock layers with more shade than South Kaibab.</p>
-        <p class="why"><b>Why it earns the stop.</b> Choose this instead of Ooh Aah—not in addition—and turn back early if the upper trail is icy.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/day-hiking.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Day Hiking ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Choose this instead of Ooh Aah—not in addition—and turn back early if the upper trail is icy.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/day-hiking.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section><section class="day" id="day-03">
@@ -129,63 +192,68 @@
         <div class="day-stamp"><span>Tue · Oct 27</span><b>GC-MV</b></div>
         <div><p class="kicker">Scenic transfer</p><h3>Desert View Road to Monument Valley</h3><p class="route">Mather → Monument Valley · 175–185 mi · clock moves +1 hr</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>The east-rim road has more worthy stops than the schedule can hold. Grandview, Navajo Point and Desert View are the clean first cut. Lipan Point is excluded because it is scheduled closed during the trip.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="historic tower and river viewpoint">
-      <figure class="photo feature-photo"><img src="assets/images/production/desert-view.jpg" alt="Desert View Watchtower" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/H70TJBAUIUU" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">↗</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <div class="weather-endpoints"><div><span>South Rim</span><strong>15° / -1°C <i>59° / 30°F</i></strong><a href="https://www.nps.gov/grca/learn/nature/weather.htm" target="_blank" rel="noreferrer">Grand Canyon Weather ↗</a></div><div><span>Monument Valley</span><strong>20° / 6°C <i>68° / 43°F</i></strong><a href="https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals" target="_blank" rel="noreferrer">U.S. Climate Normals — Kayenta-area station ↗</a></div></div><p>Expect a cool rim morning and a milder Monument Valley finish; exposed overlooks feel colder in wind.</p><p class="weather-basis">October monthly normals; Monument Valley uses the Kayenta-area NOAA station normal.</p></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>The east-rim road has more worthy stops than the schedule can hold. Grandview, Navajo Point and Desert View are the clean first cut. Lipan Point is excluded because it is scheduled closed during the trip.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/desert-view.jpg" alt="Desert View Watchtower" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">historic tower and river viewpoint · 60–90 min</p>
         <h4>Desert View Watchtower</h4>
         <p>Mary Colter&#x27;s stone tower stands above one of the rim&#x27;s clearest views of the Colorado River bending west.</p>
-        <p class="why"><b>Why it earns the stop.</b> It is both the route&#x27;s strongest cultural stop and the natural finale before leaving the park.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Desert View Drive ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> It is both the route&#x27;s strongest cultural stop and the natural finale before leaving the park.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="panoramic viewpoint">
-      <figure class="photo "><img src="assets/images/production/grandview-point.jpg" alt="Grandview Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Le_Grand_Canyon_du_Colorado_panorama_en_2016.JPG" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/grandview-point.jpg" alt="Grandview Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">best east-rim panorama</span></div>
         <p class="meta">panoramic viewpoint · 20–40 min</p>
         <h4>Grandview Point</h4>
         <p>A high promontory with long views both east and west and visible bends of the river.</p>
-        <p class="why"><b>Why it earns the stop.</b> The most rewarding quick stop early on Desert View Drive.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Desert View Drive ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The most rewarding quick stop early on Desert View Drive.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="high rim viewpoint">
-      <figure class="photo "><img src="assets/images/production/navajo-point.jpg" alt="Navajo Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:View_of_Grand_Canyon_from_Navajo_Point,_GCNP,_AZ_20110810_1.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/navajo-point.jpg" alt="Navajo Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">best watchtower composition</span></div>
         <p class="meta">high rim viewpoint · 15–30 min</p>
         <h4>Navajo Point</h4>
         <p>The South Rim&#x27;s highest developed overlook frames the Watchtower against layers of canyon and sky.</p>
-        <p class="why"><b>Why it earns the stop.</b> A distinct photograph and perspective only minutes from Desert View.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Desert View Drive ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A distinct photograph and perspective only minutes from Desert View.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="ancestral pueblo site">
-      <figure class="photo "><img src="assets/images/production/tusayan-pueblo.jpg" alt="Tusayan Pueblo" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Tusayan_Ruin_Ranger-led_Tour_5249_(12759963523).jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/tusayan-pueblo.jpg" alt="Tusayan Pueblo" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">culture option</span></div>
         <p class="meta">ancestral Pueblo site · 30–45 min</p>
         <h4>Tusayan Pueblo</h4>
         <p>A short self-guided path circles the remains of a small Ancestral Puebloan village.</p>
-        <p class="why"><b>Why it earns the stop.</b> Adds human history to a day otherwise dominated by geology; scheduled open through October 31.</p>
-        <a class="source" href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Plan from Grand Canyon — Desert View Drive ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Adds human history to a day otherwise dominated by geology; scheduled open through October 31.</p>
+        <a class="source" href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="tribal-park panorama">
-      <figure class="photo "><img src="assets/images/production/monument-sunset.jpg" alt="Monument Valley overlook at sunset" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/XZWInejJTCM" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/monument-sunset.jpg" alt="Monument Valley overlook at sunset" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">arrival prize</span></div>
         <p class="meta">tribal-park panorama · 45–75 min</p>
         <h4>Monument Valley overlook at sunset</h4>
         <p>The classic view from the visitor area places the Mittens and Merrick Butte in an immense open desert.</p>
-        <p class="why"><b>Why it earns the stop.</b> Protect this only if the time-zone change, driving and campsite setup still leave safe daylight.</p>
-        <a class="source" href="https://navajonationparks.org/" target="_blank" rel="noreferrer">Plan from Monument Valley Navajo Tribal Park ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Protect this only if the time-zone change, driving and campsite setup still leave safe daylight.</p>
+        <a class="source" href="https://navajonationparks.org/" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section></div>
     </section><section class="chapter palette-monument" id="monument-valley">
       <header class="chapter-hero">
-        <figure class="photo chapter-photo"><img src="assets/images/production/monument-valley-hero.jpg" alt="Monument Valley" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/k0g5RBU0OKg" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
-        <div class="chapter-overlay"><span class="chapter-no">AREA 02</span><p>Buttes / Navajo homeland</p><h2>Monument Valley</h2><div class="chapter-dates">Wed · Oct 28 — Wed · Oct 28</div></div>
+        <figure class="photo chapter-photo"><img src="assets/images/production/monument-valley-hero.jpg" alt="Monument Valley" loading="lazy" decoding="async"></figure>
+        <div class="chapter-overlay"><span class="chapter-no">AREA 02</span><p>Navajo Tribal Park and desert roads</p><h2 class="">Monument Valley</h2><div class="chapter-dates">Wed · Oct 28 — Wed · Oct 28</div></div>
         <div class="motif" aria-hidden="true"></div>
       </header>
       <div class="chapter-intro shell"><p>This is not an RV drive-through. Let a Navajo guide carry the morning, or walk the one self-guided loop before the transfer north.</p></div>
@@ -194,63 +262,68 @@
         <div class="day-stamp"><span>Wed · Oct 28</span><b>MV-MOAB</b></div>
         <div><p class="kicker">Half-day experience + transfer</p><h3>Monument Valley morning, Moab by dusk</h3><p class="route">Monument Valley → Ken&#x27;s Lake · 150–160 mi · 3–3.5 hr before stops</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>Choose the guided valley tour or the full Wildcat loop. The campervan is prohibited on Valley Drive; do not improvise around that rule.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="guided cultural landscape tour">
-      <figure class="photo feature-photo"><img src="assets/images/production/valley-drive-tour.jpg" alt="Navajo-guided Valley Drive tour" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:John_Ford%27s_Point_Monument_Valley_Luca_Galuzzi_2007.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">☀</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <strong>20° / 6°C <i>68° / 43°F</i></strong><p>The open valley has large day–night swings and little shelter from wind.</p><a href="https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals" target="_blank" rel="noreferrer">U.S. Climate Normals — Kayenta-area station ↗</a></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>Choose the guided valley tour or the full Wildcat loop. The campervan is prohibited on Valley Drive; do not improvise around that rule.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/valley-drive-tour.jpg" alt="Navajo-guided Valley Drive tour" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">guided cultural landscape tour · 2.5–3.5 hr</p>
         <h4>Navajo-guided Valley Drive tour</h4>
         <p>A local guide takes the group among the monumental buttes and into areas that self-guided visitors cannot access.</p>
-        <p class="why"><b>Why it earns the stop.</b> It solves the campervan prohibition and adds Navajo interpretation rather than reducing the valley to a photo stop.</p>
-        <a class="source" href="https://navajonationparks.org/guided-tour-operators/monument-valley-tour-operators/" target="_blank" rel="noreferrer">Plan from Monument Valley Authorized Tour Operators ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> It solves the campervan prohibition and adds Navajo interpretation rather than reducing the valley to a photo stop.</p>
+        <a class="source" href="https://navajonationparks.org/guided-tour-operators/monument-valley-tour-operators/" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="self-guided desert hike">
-      <figure class="photo "><img src="assets/images/production/wildcat-trail.jpg" alt="Wildcat Trail" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://www.visitutah.com/articles/the-wildcat-trail-of-monument-valley" target="_blank" rel="noreferrer">visitutah.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/wildcat-trail.jpg" alt="Wildcat Trail" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">best independent alternative</span></div>
         <p class="meta">self-guided desert hike · 2–3 hr</p>
         <h4>Wildcat Trail</h4>
         <p>The park&#x27;s self-guided loop circles West Mitten through open desert with changing views of the three iconic buttes.</p>
-        <p class="why"><b>Why it earns the stop.</b> A strong substitute if tour timing or cost does not work; start early and carry water.</p>
-        <a class="source" href="https://www.visitutah.com/articles/the-wildcat-trail-of-monument-valley" target="_blank" rel="noreferrer">Plan from Wildcat Trail of Monument Valley ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A strong substitute if tour timing or cost does not work; start early and carry water.</p>
+        <a class="source" href="https://www.visitutah.com/articles/the-wildcat-trail-of-monument-valley" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="roadside long view">
-      <figure class="photo "><img src="assets/images/production/forrest-gump-point.jpg" alt="Forrest Gump Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/fM58mVQaPrE" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/forrest-gump-point.jpg" alt="Forrest Gump Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">quick northbound stop</span></div>
         <p class="meta">roadside long view · 15–25 min</p>
         <h4>Forrest Gump Point</h4>
         <p>A straight ribbon of US-163 runs toward the Monument Valley skyline from the north.</p>
-        <p class="why"><b>Why it earns the stop.</b> It is naturally on the route toward Moab, but use only a safe pullout and never stand in traffic.</p>
-        <a class="source" href="https://www.visitutah.com/places-to-go/parks-outdoors/monument-valley" target="_blank" rel="noreferrer">Plan from Monument Valley ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> It is naturally on the route toward Moab, but use only a safe pullout and never stand in traffic.</p>
+        <a class="source" href="https://www.visitutah.com/places-to-go/parks-outdoors/monument-valley" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="roadside sandstone arch">
-      <figure class="photo "><img src="assets/images/production/wilson-arch.jpg" alt="Wilson Arch" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://outofoffice.blog/road-trip-canyonlands-to-monument-valley/" target="_blank" rel="noreferrer">outofoffice.blog ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/wilson-arch.jpg" alt="Wilson Arch" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">easy transfer break</span></div>
         <p class="meta">roadside sandstone arch · 15–35 min</p>
         <h4>Wilson Arch</h4>
         <p>A large arch rises directly beside US-191 south of Moab, with a short steep scramble for a closer look.</p>
-        <p class="why"><b>Why it earns the stop.</b> A zero-detour taste of Utah sandstone after the long transfer.</p>
-        <a class="source" href="https://www.blm.gov/visit/wilson-arch" target="_blank" rel="noreferrer">Plan from Wilson Arch ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A zero-detour taste of Utah sandstone after the long transfer.</p>
+        <a class="source" href="https://www.blm.gov/visit/wilson-arch" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="river corridor and logistics stop">
-      <figure class="photo "><img src="assets/images/production/moab-river.jpg" alt="Kane Creek / Moab supply reset" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://www.discovermoab.com/blog/post/moabs-hidden-gems-kane-creek-boulevard/" target="_blank" rel="noreferrer">discovermoab.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/moab-river.jpg" alt="Kane Creek / Moab supply reset" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">only if early</span></div>
         <p class="meta">river corridor and logistics stop · 30–60 min</p>
         <h4>Kane Creek / Moab supply reset</h4>
         <p>A short sunset drive beside the Colorado can add river-and-cliff scenery before camp.</p>
-        <p class="why"><b>Why it earns the stop.</b> Supplies and water come first; this is a mood-setting bonus only.</p>
-        <a class="source" href="https://www.discovermoab.com/scenic-byways/" target="_blank" rel="noreferrer">Plan from Moab Area Scenic Byways ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Supplies and water come first; this is a mood-setting bonus only.</p>
+        <a class="source" href="https://www.discovermoab.com/scenic-byways/" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section></div>
     </section><section class="chapter palette-moab" id="moab">
       <header class="chapter-hero">
-        <figure class="photo chapter-photo"><img src="assets/images/production/moab-hero.jpg" alt="Moab Country" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/QsamLCQn8V4" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
-        <div class="chapter-overlay"><span class="chapter-no">AREA 03</span><p>Arches / mesas / river light</p><h2>Moab Country</h2><div class="chapter-dates">Thu · Oct 29 — Fri · Oct 30</div></div>
+        <figure class="photo chapter-photo"><img src="assets/images/production/moab-hero.jpg" alt="Moab Country" loading="lazy" decoding="async"></figure>
+        <div class="chapter-overlay"><span class="chapter-no">AREA 03</span><p>Arches, Canyonlands and the Colorado Plateau</p><h2 class="">Moab Country</h2><div class="chapter-dates">Thu · Oct 29 — Fri · Oct 30</div></div>
         <div class="motif" aria-hidden="true"></div>
       </header>
       <div class="chapter-intro shell"><p>Two full days, two different scales: walk among arches first, then move to the high mesa where the Colorado and Green Rivers carve the land below.</p></div>
@@ -259,66 +332,71 @@
         <div class="day-stamp"><span>Thu · Oct 29</span><b>ARCH</b></div>
         <div><p class="kicker">Full park day</p><h3>Arches: fins, windows and one perfect span</h3><p class="route">Ken&#x27;s Lake → Arches scenic road → Ken&#x27;s Lake</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>The recommended sequence is Devils Garden early, Windows midday, Delicate Arch late. If the group prefers less hiking, replace Delicate Arch with the viewpoint—not with another long trail.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="iconic sandstone arch hike">
-      <figure class="photo feature-photo"><img src="assets/images/production/delicate-arch.jpg" alt="Delicate Arch" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/Rdk9TnvsTV4" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">☀</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <strong>22° / 5°C <i>72° / 41°F</i></strong><p>Moab afternoons can feel warm, while trailheads cool quickly after sunset.</p><a href="https://www.nps.gov/arch/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Arches Weather ↗</a></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>The recommended sequence is Devils Garden early, Windows midday, Delicate Arch late. If the group prefers less hiking, replace Delicate Arch with the viewpoint—not with another long trail.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/delicate-arch.jpg" alt="Delicate Arch" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">iconic sandstone arch hike · 2.5–3.5 hr</p>
         <h4>Delicate Arch</h4>
         <p>A three-mile round trip crosses open slickrock to Utah&#x27;s freestanding emblem above a natural sandstone bowl.</p>
-        <p class="why"><b>Why it earns the stop.</b> The strongest single image and experience in Arches; late light is beautiful, but return requires darkness-ready planning.</p>
-        <a class="source" href="https://www.nps.gov/arch/planyourvisit/delicate-arch.htm" target="_blank" rel="noreferrer">Plan from Delicate Arch ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The strongest single image and experience in Arches; late light is beautiful, but return requires darkness-ready planning.</p>
+        <a class="source" href="https://www.nps.gov/arch/planyourvisit/delicate-arch.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="easy fin-and-arch hike">
-      <figure class="photo "><img src="assets/images/production/landscape-arch.jpg" alt="Devils Garden to Landscape Arch" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/6UVyp0OVGys" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/landscape-arch.jpg" alt="Devils Garden to Landscape Arch" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">best morning hike</span></div>
         <p class="meta">easy fin-and-arch hike · 1.5–2.5 hr</p>
         <h4>Devils Garden to Landscape Arch</h4>
         <p>A relatively easy 1.9-mile round trip threads through sandstone fins to North America&#x27;s longest arch span.</p>
-        <p class="why"><b>Why it earns the stop.</b> Start here before parking fills; the light also favors Landscape Arch in the morning.</p>
-        <a class="source" href="https://www.nps.gov/arch/planyourvisit/devils-garden.htm" target="_blank" rel="noreferrer">Plan from Devils Garden ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Start here before parking fills; the light also favors Landscape Arch in the morning.</p>
+        <a class="source" href="https://www.nps.gov/arch/planyourvisit/devils-garden.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="short linked arch walks">
-      <figure class="photo "><img src="assets/images/production/double-arch.jpg" alt="Windows + Double Arch" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/CYKapaWkNyA" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/double-arch.jpg" alt="Windows + Double Arch" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">highest variety per mile</span></div>
         <p class="meta">short linked arch walks · 1.5–2.5 hr</p>
         <h4>Windows + Double Arch</h4>
         <p>North Window, Turret Arch and massive Double Arch cluster in one compact, visually dense district.</p>
-        <p class="why"><b>Why it earns the stop.</b> The best all-abilities core stop and an easy place to adjust the day&#x27;s walking load.</p>
-        <a class="source" href="https://www.nps.gov/arch/planyourvisit/the-windows.htm" target="_blank" rel="noreferrer">Plan from The Windows Section ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The best all-abilities core stop and an easy place to adjust the day&#x27;s walking load.</p>
+        <a class="source" href="https://www.nps.gov/arch/planyourvisit/the-windows.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="sandstone canyon walk">
-      <figure class="photo "><img src="assets/images/production/park-avenue.jpg" alt="Park Avenue" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Park_Avenue_in_Arches_National_Park_kz02.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/park-avenue.jpg" alt="Park Avenue" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">cinematic opener</span></div>
         <p class="meta">sandstone canyon walk · 45–90 min</p>
         <h4>Park Avenue</h4>
         <p>A corridor of monoliths and sheer walls feels more like a stone city street than an arch trail.</p>
-        <p class="why"><b>Why it earns the stop.</b> Walk one-way with a pickup, or use the overlook as a quick morning scene-setter.</p>
-        <a class="source" href="https://www.nps.gov/arch/planyourvisit/placestogo.htm" target="_blank" rel="noreferrer">Plan from Arches — Places to Go ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Walk one-way with a pickup, or use the overlook as a quick morning scene-setter.</p>
+        <a class="source" href="https://www.nps.gov/arch/planyourvisit/placestogo.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="difficult slickrock hike">
-      <figure class="photo "><img src="assets/images/production/double-o-arch.jpg" alt="Double O Arch" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Double-O-Arch_Arches_National_Park_2.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/double-o-arch.jpg" alt="Double O Arch" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">swap for Delicate Arch</span></div>
         <p class="meta">difficult slickrock hike · 3–5 hr</p>
         <h4>Double O Arch</h4>
         <p>Beyond Landscape Arch, the trail climbs narrow fins and exposed sandstone to a double opening.</p>
-        <p class="why"><b>Why it earns the stop.</b> Choose it for scrambling and solitude, but not on wet or icy rock and not in addition to every other long hike.</p>
-        <a class="source" href="https://www.nps.gov/arch/planyourvisit/devils-garden.htm" target="_blank" rel="noreferrer">Plan from Devils Garden ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Choose it for scrambling and solitude, but not on wet or icy rock and not in addition to every other long hike.</p>
+        <a class="source" href="https://www.nps.gov/arch/planyourvisit/devils-garden.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="roadside geologic formation">
-      <figure class="photo "><img src="assets/images/production/balanced-rock.jpg" alt="Balanced Rock" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Balanced_Rock_sunset.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/balanced-rock.jpg" alt="Balanced Rock" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#06</span><span class="badge">easy filler</span></div>
         <p class="meta">roadside geologic formation · 15–30 min</p>
         <h4>Balanced Rock</h4>
         <p>A huge caprock appears impossibly poised above its eroded pedestal beside the scenic road.</p>
-        <p class="why"><b>Why it earns the stop.</b> A genuinely worthwhile quick stop between the Windows and Delicate Arch areas.</p>
-        <a class="source" href="https://www.nps.gov/arch/planyourvisit/placestogo.htm" target="_blank" rel="noreferrer">Plan from Arches — Places to Go ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A genuinely worthwhile quick stop between the Windows and Delicate Arch areas.</p>
+        <a class="source" href="https://www.nps.gov/arch/planyourvisit/placestogo.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section><section class="day" id="day-06">
@@ -326,141 +404,151 @@
         <div class="day-stamp"><span>Fri · Oct 30</span><b>CANY-DHP</b></div>
         <div><p class="kicker">Full scenic circuit</p><h3>Island in the Sky to Dead Horse Point</h3><p class="route">Ken&#x27;s Lake → Island in the Sky → Kayenta Campground</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>Mesa Arch, Grand View and Dead Horse sunset are the core. Add either Upheaval Dome or a longer rim walk—not both unless the group starts very early.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="mesa-top panorama and rim walk">
-      <figure class="photo feature-photo"><img src="assets/images/production/grand-view-canyonlands.jpg" alt="Grand View Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/a6BZse3oxiw" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">↗</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <strong>17° / 2°C <i>63° / 36°F</i></strong><p>Island in the Sky and Dead Horse Point sit higher than Moab; wind can make sunset notably colder.</p><a href="https://www.nps.gov/arch/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Arches Weather ↗</a></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>Mesa Arch, Grand View and Dead Horse sunset are the core. Add either Upheaval Dome or a longer rim walk—not both unless the group starts very early.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/grand-view-canyonlands.jpg" alt="Grand View Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">mesa-top panorama and rim walk · 45–120 min</p>
         <h4>Grand View Point</h4>
         <p>The road ends on a cliff above a maze of canyons, with a one-mile rim extension for progressively wider views.</p>
-        <p class="why"><b>Why it earns the stop.</b> The most complete explanation of Island in the Sky&#x27;s enormous scale.</p>
-        <a class="source" href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Plan from Canyonlands — Trip Itineraries ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The most complete explanation of Island in the Sky&#x27;s enormous scale.</p>
+        <a class="source" href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="short arch hike">
-      <figure class="photo "><img src="assets/images/production/mesa-arch.jpg" alt="Mesa Arch" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/MqDlQ_WdawI" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/mesa-arch.jpg" alt="Mesa Arch" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">essential short walk</span></div>
         <p class="meta">short arch hike · 45–75 min</p>
         <h4>Mesa Arch</h4>
         <p>A 0.5-mile loop reaches a cliff-edge arch framing Buck Canyon and the La Sal Mountains.</p>
-        <p class="why"><b>Why it earns the stop.</b> A famous sunrise subject, but its composition works all day and crowds are usually gentler later.</p>
-        <a class="source" href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Plan from Canyonlands — Trip Itineraries ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A famous sunrise subject, but its composition works all day and crowds are usually gentler later.</p>
+        <a class="source" href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="colorado river overlook">
-      <figure class="photo "><img src="assets/images/production/dead-horse-overlook.jpg" alt="Dead Horse Point Overlook" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/mjzmWUD9a78" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/dead-horse-overlook.jpg" alt="Dead Horse Point Overlook" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">sunset anchor</span></div>
         <p class="meta">Colorado River overlook · 45–90 min</p>
         <h4>Dead Horse Point Overlook</h4>
         <p>A short paved path reaches the park&#x27;s defining view, 2,000 feet above a sweeping Colorado River bend.</p>
-        <p class="why"><b>Why it earns the stop.</b> The light and overnight location make this the day&#x27;s natural finale.</p>
-        <a class="source" href="https://stateparks.utah.gov/parks/dead-horse/hiking-at-dead-horse-point/" target="_blank" rel="noreferrer">Plan from Dead Horse Point Rim Hiking Trails ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The light and overnight location make this the day&#x27;s natural finale.</p>
+        <a class="source" href="https://stateparks.utah.gov/parks/dead-horse/hiking-at-dead-horse-point/" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="river-canyon viewpoint">
-      <figure class="photo "><img src="assets/images/production/green-river-overlook.jpg" alt="Green River Overlook" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Rock_Formations_near_Green_River_Overlook,_Canyonlands_20110815_1.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/green-river-overlook.jpg" alt="Green River Overlook" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">distinct second river view</span></div>
         <p class="meta">river-canyon viewpoint · 20–40 min</p>
         <h4>Green River Overlook</h4>
         <p>An open western overlook looks across the Green River&#x27;s canyon toward the Maze and distant plateaus.</p>
-        <p class="why"><b>Why it earns the stop.</b> A different watershed and softer composition than Grand View.</p>
-        <a class="source" href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Plan from Canyonlands — Trip Itineraries ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A different watershed and softer composition than Grand View.</p>
+        <a class="source" href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="geologic crater hike">
-      <figure class="photo "><img src="assets/images/production/upheaval-dome.jpg" alt="Upheaval Dome" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Upheaval_Dome_Canyonlands.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/upheaval-dome.jpg" alt="Upheaval Dome" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">science-minded swap</span></div>
         <p class="meta">geologic crater hike · 1.5–2.5 hr</p>
         <h4>Upheaval Dome</h4>
         <p>A short steep trail reaches overlooks into a strange circular structure of tilted, colorful rock.</p>
-        <p class="why"><b>Why it earns the stop.</b> Pick this when unusual geology matters more than another rim panorama.</p>
-        <a class="source" href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Plan from Canyonlands — Trip Itineraries ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Pick this when unusual geology matters more than another rim panorama.</p>
+        <a class="source" href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="quiet slickrock rim hike">
-      <figure class="photo "><img src="assets/images/production/bighorn-overlook.jpg" alt="Bighorn Overlook" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Colorado_River_at_Dead_Horse_Point_(3787442082).jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/bighorn-overlook.jpg" alt="Bighorn Overlook" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#06</span><span class="badge">solitude add-on</span></div>
         <p class="meta">quiet slickrock rim hike · 2–3 hr</p>
         <h4>Bighorn Overlook</h4>
         <p>A cairned route from near Kayenta reaches an isolated overlook whose views rival the main point.</p>
-        <p class="why"><b>Why it earns the stop.</b> A strong campsite-adjacent option if the group arrives well before sunset.</p>
-        <a class="source" href="https://stateparks.utah.gov/parks/dead-horse/hiking-at-dead-horse-point/" target="_blank" rel="noreferrer">Plan from Dead Horse Point Rim Hiking Trails ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A strong campsite-adjacent option if the group arrives well before sunset.</p>
+        <a class="source" href="https://stateparks.utah.gov/parks/dead-horse/hiking-at-dead-horse-point/" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section></div>
     </section><section class="chapter palette-reef" id="capitol-highway12">
       <header class="chapter-hero">
-        <figure class="photo chapter-photo"><img src="assets/images/production/capitol-reef-hero.jpg" alt="Capitol Reef + Highway 12" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/-lERugCXR3w" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
-        <div class="chapter-overlay"><span class="chapter-no">AREA 04</span><p>Fold / orchard / high road</p><h2>Capitol Reef + Highway 12</h2><div class="chapter-dates">Sat · Oct 31 — Sun · Nov 1</div></div>
+        <figure class="photo chapter-photo"><img src="assets/images/production/capitol-reef-hero.jpg" alt="Capitol Reef + Highway 12" loading="lazy" decoding="async"></figure>
+        <div class="chapter-overlay"><span class="chapter-no">AREA 04</span><p>Fruita, the Waterpocket Fold and Highway 12</p><h2 class=" long-title">Capitol Reef + Highway 12</h2><div class="chapter-dates">Sat · Oct 31 — Sun · Nov 1</div></div>
         <div class="motif" aria-hidden="true"></div>
       </header>
-      <div class="chapter-intro shell"><p>The route turns intimate: Fremont orchards and petroglyphs, then a road that climbs from slickrock canyons over Boulder Mountain before descending toward Bryce.</p></div>
+      <div class="chapter-intro shell"><p>Fruita brings orchards, petroglyphs and pioneer history into the red-rock landscape. Highway 12 then climbs over Boulder Mountain and crosses the exposed Hogsback on the way to Bryce.</p></div>
       <div class="shell"><section class="day" id="day-07">
       <header class="day-head">
         <div class="day-stamp"><span>Sat · Oct 31</span><b>DHP-CARE</b></div>
         <div><p class="kicker">Transfer + half park day</p><h3>Dead Horse dawn, Capitol Reef afternoon</h3><p class="route">Kayenta → Fruita · 155–165 mi · 3–3.5 hr</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>Hickman Bridge plus the Fruita core is the realistic first plan. Scenic Drive or Grand Wash is a swap if arrival is early; road access depends on weather and vehicle length.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="natural bridge hike">
-      <figure class="photo feature-photo"><img src="assets/images/production/hickman-bridge.jpg" alt="Hickman Bridge" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/Kdu1gxxua5A" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">◐</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <strong>14° / -1°C <i>57° / 30°F</i></strong><p>Fruita is sheltered, but shaded trails and the campground can freeze overnight.</p><a href="https://www.nps.gov/care/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Capitol Reef Weather ↗</a></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>Hickman Bridge plus the Fruita core is the realistic first plan. Scenic Drive or Grand Wash is a swap if arrival is early; road access depends on weather and vehicle length.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/hickman-bridge.jpg" alt="Hickman Bridge" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">natural bridge hike · 1.5–2.5 hr</p>
         <h4>Hickman Bridge</h4>
         <p>A moderate two-mile round trip climbs from the Fremont River to a 133-foot natural bridge and broad canyon views.</p>
-        <p class="why"><b>Why it earns the stop.</b> It delivers the park&#x27;s signature geology without consuming the whole transfer day.</p>
-        <a class="source" href="https://www.nps.gov/care/planyourvisit/trailguide.htm" target="_blank" rel="noreferrer">Plan from Capitol Reef Trail Guide ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> It delivers the park&#x27;s signature geology without consuming the whole transfer day.</p>
+        <a class="source" href="https://www.nps.gov/care/planyourvisit/trailguide.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="orchards and pioneer landscape">
-      <figure class="photo "><img src="assets/images/production/fruita-orchard.jpg" alt="Fruita Historic District" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://alanstenbackphotography.us/blog/discovering-the-beauty-of-capitol-reef-national-park/" target="_blank" rel="noreferrer">alanstenbackphotography.us ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/fruita-orchard.jpg" alt="Fruita Historic District" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">essential atmosphere</span></div>
         <p class="meta">orchards and pioneer landscape · 45–90 min</p>
         <h4>Fruita Historic District</h4>
         <p>Cottonwoods, orchards, barns and red cliffs create the park&#x27;s softest and most nostalgic landscape.</p>
-        <p class="why"><b>Why it earns the stop.</b> It is beside camp and gives Capitol Reef a human scale distinct from the other parks.</p>
-        <a class="source" href="https://www.nps.gov/care/learn/historyculture/fruita-rural-historic-district.htm" target="_blank" rel="noreferrer">Plan from Fruita Historic District ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> It is beside camp and gives Capitol Reef a human scale distinct from the other parks.</p>
+        <a class="source" href="https://www.nps.gov/care/learn/historyculture/fruita-rural-historic-district.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="fremont culture rock art">
-      <figure class="photo "><img src="assets/images/production/capitol-petroglyphs.jpg" alt="Petroglyph panels" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://www.nps.gov/places/petroglyph-panel.htm" target="_blank" rel="noreferrer">nps.gov ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/capitol-petroglyphs.jpg" alt="Petroglyph panels" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">essential culture stop</span></div>
         <p class="meta">Fremont culture rock art · 30–45 min</p>
         <h4>Petroglyph panels</h4>
         <p>Boardwalks along SR 24 lead to Fremont Culture figures pecked into the cliff face roughly 700–1,000 years ago.</p>
-        <p class="why"><b>Why it earns the stop.</b> A brief, high-value stop that should not be displaced by another viewpoint.</p>
-        <a class="source" href="https://www.nps.gov/places/capitol-reef-petroglyph-panel.htm" target="_blank" rel="noreferrer">Plan from Petroglyph Panel ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A brief, high-value stop that should not be displaced by another viewpoint.</p>
+        <a class="source" href="https://www.nps.gov/places/capitol-reef-petroglyph-panel.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="easy canyon hike">
-      <figure class="photo "><img src="assets/images/production/grand-wash.jpg" alt="Grand Wash narrows" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unicornadventure.blog/2024/10/31/a-guide-to-hiking-the-grand-wash-trail-in-capitol-reef-national-park-utah/" target="_blank" rel="noreferrer">unicornadventure.blog ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/grand-wash.jpg" alt="Grand Wash narrows" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">flat-hike swap</span></div>
         <p class="meta">easy canyon hike · 1.5–3 hr</p>
         <h4>Grand Wash narrows</h4>
         <p>A broad wash tightens between high sandstone walls on a mostly level route accessible from SR 24.</p>
-        <p class="why"><b>Why it earns the stop.</b> The best low-elevation substitute if Hickman feels too steep or the van cannot use the spur road.</p>
-        <a class="source" href="https://www.nps.gov/care/planyourvisit/trailguide.htm" target="_blank" rel="noreferrer">Plan from Capitol Reef Trail Guide ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The best low-elevation substitute if Hickman feels too steep or the van cannot use the spur road.</p>
+        <a class="source" href="https://www.nps.gov/care/planyourvisit/trailguide.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="paved and dirt scenic drive">
-      <figure class="photo "><img src="assets/images/production/capitol-scenic-drive.jpg" alt="Scenic Drive + Grand Wash spur" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/WEB6rgfAPHo" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/capitol-scenic-drive.jpg" alt="Scenic Drive + Grand Wash spur" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">vehicle-dependent option</span></div>
         <p class="meta">paved and dirt scenic drive · 1.5–2.5 hr</p>
         <h4>Scenic Drive + Grand Wash spur</h4>
         <p>The paved drive follows the Waterpocket Fold; the dirt spur enters a canyon only when open and compatible.</p>
-        <p class="why"><b>Why it earns the stop.</b> A relaxed option after the transfer, but never worth forcing in mud, ice or a vehicle over the governing limit.</p>
-        <a class="source" href="https://www.nps.gov/care/planyourvisit/roads.htm" target="_blank" rel="noreferrer">Plan from Capitol Reef Roads ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A relaxed option after the transfer, but never worth forcing in mud, ice or a vehicle over the governing limit.</p>
+        <a class="source" href="https://www.nps.gov/care/planyourvisit/roads.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="short panorama walks">
-      <figure class="photo "><img src="assets/images/production/capitol-sunset-point.jpg" alt="Goosenecks + Sunset Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://schoandjo.com/sunset-point-capitol-reef/" target="_blank" rel="noreferrer">schoandjo.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/capitol-sunset-point.jpg" alt="Goosenecks + Sunset Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#06</span><span class="badge">late-light fallback</span></div>
         <p class="meta">short panorama walks · 45–75 min</p>
         <h4>Goosenecks + Sunset Point</h4>
         <p>Two small trails near the park&#x27;s west side reveal Sulphur Creek&#x27;s bends and a wide evening panorama.</p>
-        <p class="why"><b>Why it earns the stop.</b> The simplest strong finish when the longer hikes no longer fit.</p>
-        <a class="source" href="https://www.nps.gov/care/planyourvisit/trailguide.htm" target="_blank" rel="noreferrer">Plan from Capitol Reef Trail Guide ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The simplest strong finish when the longer hikes no longer fit.</p>
+        <a class="source" href="https://www.nps.gov/care/planyourvisit/trailguide.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section><section class="day" id="day-08">
@@ -468,73 +556,78 @@
         <div class="day-stamp"><span>Sun · Nov 1</span><b>HWY12-BRCA</b></div>
         <div><p class="kicker">Scenic road day</p><h3>Highway 12 to Bryce Canyon</h3><p class="route">Fruita → Bryce · 110–120 mi · 3+ hr without stops · clocks fall back</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>The road itself is the attraction. Stop at two or three major overlooks and protect Bryce late light. Lower Calf Creek Falls is a full-day trade, not a casual add-on.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="all-american scenic road">
-      <figure class="photo feature-photo"><img src="assets/images/production/highway12-hogsback.jpg" alt="Highway 12 drive: Boulder Mountain to the Hogsback" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Scenic_Byway_12_-_Scenic_Byway_12_Across_the_Hogsback_-_NARA_-_7721855.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">❄</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <div class="weather-endpoints"><div><span>Fruita</span><strong>14° / -1°C <i>57° / 30°F</i></strong><a href="https://www.nps.gov/care/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Capitol Reef Weather ↗</a></div><div><span>Bryce</span><strong>7° / -5°C <i>45° / 23°F</i></strong><a href="https://www.nps.gov/brca/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Bryce Canyon Weather ↗</a></div></div><p>Boulder Mountain is the weather hinge: check for snow or ice before committing to Highway 12.</p><p class="weather-basis">Capitol Reef October and Bryce November monthly normals; Boulder Mountain can be colder than both endpoints.</p></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>The road itself is the attraction. Stop at two or three major overlooks and protect Bryce late light. Lower Calf Creek Falls is a full-day trade, not a casual add-on.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/highway12-hogsback.jpg" alt="Highway 12 drive: Boulder Mountain to the Hogsback" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">All-American scenic road · 3–5 hr with stops</p>
         <h4>Highway 12 drive: Boulder Mountain to the Hogsback</h4>
         <p>The road drops from pine-and-aspen high country into slickrock, then balances along a narrow ridge above deep canyons.</p>
-        <p class="why"><b>Why it earns the stop.</b> Few drives show so many landscape transitions in one continuous line.</p>
-        <a class="source" href="https://www.recreation.gov/gateways/13836" target="_blank" rel="noreferrer">Plan from Scenic Byway 12 ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Few drives show so many landscape transitions in one continuous line.</p>
+        <a class="source" href="https://www.recreation.gov/gateways/13836" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="slickrock panorama">
-      <figure class="photo "><img src="assets/images/production/head-of-rocks.jpg" alt="Head of the Rocks Overlook" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Utah_State_Route_12.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/head-of-rocks.jpg" alt="Head of the Rocks Overlook" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">best desert pullout</span></div>
         <p class="meta">slickrock panorama · 15–30 min</p>
         <h4>Head of the Rocks Overlook</h4>
         <p>A roadside overlook opens across cream-and-orange Escalante slickrock toward Boulder Mountain and the Henry Mountains.</p>
-        <p class="why"><b>Why it earns the stop.</b> The cleanest quick visual summary of Grand Staircase–Escalante.</p>
-        <a class="source" href="https://www.blm.gov/visit/head-rocks-overlook-wayside" target="_blank" rel="noreferrer">Plan from Head of the Rocks Overlook ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The cleanest quick visual summary of Grand Staircase–Escalante.</p>
+        <a class="source" href="https://www.blm.gov/visit/head-rocks-overlook-wayside" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="high-elevation viewpoints">
-      <figure class="photo "><img src="assets/images/production/larb-hollow.jpg" alt="Homestead / Larb Hollow Overlooks" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Scenic_Byway_12_-_View_Northeast_from_Larb_Hollow_Overlook_-_NARA_-_7721880.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/larb-hollow.jpg" alt="Homestead / Larb Hollow Overlooks" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">best mountain views</span></div>
         <p class="meta">high-elevation viewpoints · 15–30 min each</p>
         <h4>Homestead / Larb Hollow Overlooks</h4>
         <p>Boulder Mountain pullouts look east across the Waterpocket Fold toward the Henry and Navajo Mountains.</p>
-        <p class="why"><b>Why it earns the stop.</b> Distinct from the desert stops and worth choosing before any snow or fog closes the view.</p>
-        <a class="source" href="https://travel.utah.gov/wp-content/uploads/Scenic-Byway-12MANAGEMENTPLANLOWRES.pdf" target="_blank" rel="noreferrer">Plan from Scenic Byway 12 Corridor Plan ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Distinct from the desert stops and worth choosing before any snow or fog closes the view.</p>
+        <a class="source" href="https://travel.utah.gov/wp-content/uploads/Scenic-Byway-12MANAGEMENTPLANLOWRES.pdf" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="ancestral pueblo village museum">
-      <figure class="photo "><img src="assets/images/production/anasazi-museum.jpg" alt="Anasazi State Park Museum" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Pithouse_in_Anasazi_Indian_State_Park_DyeClan.com_-_panoramio_(1).jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/anasazi-museum.jpg" alt="Anasazi State Park Museum" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">weather-proof culture stop</span></div>
         <p class="meta">ancestral Pueblo village museum · 45–75 min</p>
         <h4>Anasazi State Park Museum</h4>
         <p>A compact museum and excavated village in Boulder interpret one of the region&#x27;s largest known ancestral communities.</p>
-        <p class="why"><b>Why it earns the stop.</b> The strongest indoor swap if exposed overlooks are cold, wet or clouded in.</p>
-        <a class="source" href="https://stateparks.utah.gov/parks/anasazi/" target="_blank" rel="noreferrer">Plan from Anasazi State Park Museum ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The strongest indoor swap if exposed overlooks are cold, wet or clouded in.</p>
+        <a class="source" href="https://stateparks.utah.gov/parks/anasazi/" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="desert waterfall hike">
-      <figure class="photo "><img src="assets/images/production/calf-creek-falls.jpg" alt="Lower Calf Creek Falls" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Calf_Creek_falls.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/calf-creek-falls.jpg" alt="Lower Calf Creek Falls" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">full-day replacement</span></div>
         <p class="meta">desert waterfall hike · 4–5 hr</p>
         <h4>Lower Calf Creek Falls</h4>
         <p>A six-mile round trip follows a canyon to a 126-foot waterfall and pool beneath mineral-streaked walls.</p>
-        <p class="why"><b>Why it earns the stop.</b> Beautiful, but it replaces Bryce afternoon and most scenic pullouts; do it only if the group deliberately accepts that cost.</p>
-        <a class="source" href="https://www.blm.gov/visit/calf-creek-recreation-area-campground" target="_blank" rel="noreferrer">Plan from Calf Creek Recreation Area ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Beautiful, but it replaces Bryce afternoon and most scenic pullouts; do it only if the group deliberately accepts that cost.</p>
+        <a class="source" href="https://www.blm.gov/visit/calf-creek-recreation-area-campground" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="hoodoo amphitheater viewpoint">
-      <figure class="photo "><img src="assets/images/production/bryce-sunset.jpg" alt="Sunset Point, Bryce" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/VxmGQxsapCM" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/bryce-sunset.jpg" alt="Sunset Point, Bryce" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#06</span><span class="badge">arrival finale</span></div>
         <p class="meta">hoodoo amphitheater viewpoint · 45–75 min</p>
         <h4>Sunset Point, Bryce</h4>
         <p>The first rim view looks directly onto Thor&#x27;s Hammer and the dense hoodoos below Sunset Point.</p>
-        <p class="why"><b>Why it earns the stop.</b> Protect this if road and weather conditions allow a comfortable arrival before dark.</p>
-        <a class="source" href="https://www.nps.gov/brca/planyourvisit/scenicdrive.htm" target="_blank" rel="noreferrer">Plan from Bryce Canyon — Scenic Drive ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Protect this if road and weather conditions allow a comfortable arrival before dark.</p>
+        <a class="source" href="https://www.nps.gov/brca/planyourvisit/scenicdrive.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section></div>
     </section><section class="chapter palette-bryce" id="bryce">
       <header class="chapter-hero">
-        <figure class="photo chapter-photo"><img src="assets/images/production/bryce-hero.jpg" alt="Bryce Canyon" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/Dv-ZFbksh30" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
-        <div class="chapter-overlay"><span class="chapter-no">AREA 05</span><p>Hoodoos / frost / morning glow</p><h2>Bryce Canyon</h2><div class="chapter-dates">Mon · Nov 2 — Mon · Nov 2</div></div>
+        <figure class="photo chapter-photo"><img src="assets/images/production/bryce-hero.jpg" alt="Bryce Canyon" loading="lazy" decoding="async"></figure>
+        <div class="chapter-overlay"><span class="chapter-no">AREA 05</span><p>High-elevation hoodoos and rim trails</p><h2 class="">Bryce Canyon</h2><div class="chapter-dates">Mon · Nov 2 — Mon · Nov 2</div></div>
         <div class="motif" aria-hidden="true"></div>
       </header>
       <div class="chapter-intro shell"><p>A compact, high-elevation chapter. Descend among the hoodoos if the trail is dry; otherwise let the rim and southern overlooks do the work.</p></div>
@@ -543,218 +636,239 @@
         <div class="day-stamp"><span>Mon · Nov 2</span><b>BRCA-ZION</b></div>
         <div><p class="kicker">Morning park + transfer</p><h3>Bryce morning, Zion by afternoon</h3><p class="route">Bryce → Zion · 85–90 mi east route or ~150 mi via I-15</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>Queen&#x27;s Garden/Navajo is the first choice when dry. On snow or ice, stay on the rim and drive the southern viewpoints. Canyon Overlook at Zion fits only with safe east-route access and parking.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="hoodoo amphitheater hike">
-      <figure class="photo feature-photo"><img src="assets/images/production/queens-navajo.jpg" alt="Queen&#x27;s Garden + Navajo combination" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/a1QPssvpxyI" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">❄</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <strong>7° / -5°C <i>45° / 23°F</i></strong><p>Bryce freezes most nights in this season. Carry traction and treat canyon trails as conditions-dependent.</p><a href="https://www.nps.gov/brca/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Bryce Canyon Weather ↗</a></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>Queen&#x27;s Garden/Navajo is the first choice when dry. On snow or ice, stay on the rim and drive the southern viewpoints. Canyon Overlook at Zion fits only with safe east-route access and parking.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/queens-navajo.jpg" alt="Queen&#x27;s Garden + Navajo combination" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">hoodoo amphitheater hike · 2–3 hr</p>
         <h4>Queen&#x27;s Garden + Navajo combination</h4>
         <p>A 2.9-mile loop descends from Sunrise Point among hoodoos and climbs the dramatic Two Bridges side of Navajo Loop.</p>
-        <p class="why"><b>Why it earns the stop.</b> The park&#x27;s recommended first-timer hike and the best way to experience hoodoos at human scale.</p>
-        <a class="source" href="https://www.nps.gov/brca/planyourvisit/day-hikes.htm" target="_blank" rel="noreferrer">Plan from Bryce Canyon — Day Hikes ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The park&#x27;s recommended first-timer hike and the best way to experience hoodoos at human scale.</p>
+        <a class="source" href="https://www.nps.gov/brca/planyourvisit/day-hikes.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="easy rim walk">
-      <figure class="photo "><img src="assets/images/production/bryce-rim.jpg" alt="Sunrise to Sunset Rim Trail" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/sOs_R0LsOVE" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/bryce-rim.jpg" alt="Sunrise to Sunset Rim Trail" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">best icy-day plan</span></div>
         <p class="meta">easy rim walk · 45–75 min</p>
         <h4>Sunrise to Sunset Rim Trail</h4>
         <p>A paved one-mile round trip connects the two central amphitheater viewpoints above Thor&#x27;s Hammer.</p>
-        <p class="why"><b>Why it earns the stop.</b> High visual return with almost no route cost; ideal if cold or trail ice discourages descent.</p>
-        <a class="source" href="https://www.nps.gov/brca/planyourvisit/day-hikes.htm" target="_blank" rel="noreferrer">Plan from Bryce Canyon — Day Hikes ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> High visual return with almost no route cost; ideal if cold or trail ice discourages descent.</p>
+        <a class="source" href="https://www.nps.gov/brca/planyourvisit/day-hikes.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="tiered amphitheater viewpoint">
-      <figure class="photo "><img src="assets/images/production/inspiration-point-bryce.jpg" alt="Inspiration Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/xWtAe1fIYew" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/inspiration-point-bryce.jpg" alt="Inspiration Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">best grandstand view</span></div>
         <p class="meta">tiered amphitheater viewpoint · 30–60 min</p>
         <h4>Inspiration Point</h4>
         <p>A short uphill series of overlooks reveals the densest section of the Bryce Amphitheater from above.</p>
-        <p class="why"><b>Why it earns the stop.</b> The strongest single rim panorama accessible to vehicles over 20 feet.</p>
-        <a class="source" href="https://www.nps.gov/brca/planyourvisit/scenicdrive.htm" target="_blank" rel="noreferrer">Plan from Bryce Canyon — Scenic Drive ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The strongest single rim panorama accessible to vehicles over 20 feet.</p>
+        <a class="source" href="https://www.nps.gov/brca/planyourvisit/scenicdrive.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="southern scenic-drive overlooks">
-      <figure class="photo "><img src="assets/images/production/natural-bridge-bryce.jpg" alt="Natural Bridge + Rainbow Point" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Natural_Bridge._Bryce_Canyon_Utah._(30614425236).jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/natural-bridge-bryce.jpg" alt="Natural Bridge + Rainbow Point" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">weather-aware road swap</span></div>
         <p class="meta">southern scenic-drive overlooks · 1.5–2.5 hr</p>
         <h4>Natural Bridge + Rainbow Point</h4>
         <p>The high southern road pairs a red rock arch with long views from the plateau&#x27;s far end.</p>
-        <p class="why"><b>Why it earns the stop.</b> Choose this instead of a canyon hike when roads are clear but foot trails are icy.</p>
-        <a class="source" href="https://www.nps.gov/brca/planyourvisit/scenicdrive.htm" target="_blank" rel="noreferrer">Plan from Bryce Canyon — Scenic Drive ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Choose this instead of a canyon hike when roads are clear but foot trails are icy.</p>
+        <a class="source" href="https://www.nps.gov/brca/planyourvisit/scenicdrive.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="short cliffside hike">
-      <figure class="photo "><img src="assets/images/production/canyon-overlook-zion.jpg" alt="Canyon Overlook, Zion" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Overlook_trail_view_-_Zion_Canyon.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/canyon-overlook-zion.jpg" alt="Canyon Overlook, Zion" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">east-route arrival bonus</span></div>
         <p class="meta">short cliffside hike · 1–1.5 hr</p>
         <h4>Canyon Overlook, Zion</h4>
         <p>A one-mile round trip ends above lower Zion Canyon with the switchback road curling through the cliffs below.</p>
-        <p class="why"><b>Why it earns the stop.</b> A superb bridge between Bryce and Zion, but parking is extremely limited and the vehicle must be legal on the east corridor.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Plan from Zion — Canyon Overlook Trail ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A superb bridge between Bryce and Zion, but parking is extremely limited and the vehicle must be legal on the east corridor.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section></div>
     </section><section class="chapter palette-zion" id="zion">
       <header class="chapter-hero">
-        <figure class="photo chapter-photo"><img src="assets/images/production/zion-hero.jpg" alt="Zion" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/xNFIj9i3Cmc" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
-        <div class="chapter-overlay"><span class="chapter-no">AREA 06</span><p>Sandstone walls / river corridor</p><h2>Zion</h2><div class="chapter-dates">Tue · Nov 3 — Thu · Nov 5</div></div>
+        <figure class="photo chapter-photo"><img src="assets/images/production/zion-hero.jpg" alt="Zion" loading="lazy" decoding="async"></figure>
+        <div class="chapter-overlay"><span class="chapter-no">AREA 06</span><p>Zion Canyon, West Rim and the Virgin River</p><h2 class="">Zion</h2><div class="chapter-dates">Tue · Nov 3 — Thu · Nov 5</div></div>
         <div class="motif" aria-hidden="true"></div>
       </header>
       <div class="chapter-intro shell"><p>Two full days make room for weather. Pair one ambitious canyon hike with one flexible river day, then leave the return morning nearly empty.</p></div>
       <div class="shell"><section class="day" id="day-10">
       <header class="day-head">
         <div class="day-stamp"><span>Tue · Nov 3</span><b>ZION-HIGH</b></div>
-        <div><p class="kicker">Full park day</p><h3>The high view day</h3><p class="route">Zion Canyon shuttle day</p></div>
+        <div><p class="kicker">Full park day</p><h3>West Rim Trail and Zion Canyon views</h3><p class="route">Zion Canyon shuttle day</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>Scout Lookout is the guaranteed anchor. Angels Landing is an optional permitted extension, never an assumption. Emerald Pools is the gentler swap.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="strenuous switchback hike">
-      <figure class="photo feature-photo"><img src="assets/images/production/scout-lookout.jpg" alt="Scout Lookout via West Rim Trail" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/lkw8Mf9U1tQ" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">☀</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <strong>18° / 3°C <i>64° / 37°F</i></strong><p>Zion Canyon has a large daily swing; shaded switchbacks stay cool long after sunrise.</p><a href="https://www.nps.gov/zion/planyourvisit/weather-and-climate.htm" target="_blank" rel="noreferrer">Zion Weather and Climate ↗</a></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>Scout Lookout is the guaranteed anchor. Angels Landing is an optional permitted extension, never an assumption. Emerald Pools is the gentler swap.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/scout-lookout.jpg" alt="Scout Lookout via West Rim Trail" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">strenuous switchback hike · 3–4 hr</p>
         <h4>Scout Lookout via West Rim Trail</h4>
         <p>The paved West Rim Trail climbs through Refrigerator Canyon and Walter&#x27;s Wiggles to a broad overlook above Zion Canyon.</p>
-        <p class="why"><b>Why it earns the stop.</b> It delivers most of the famous elevation and drama without requiring an Angels Landing permit.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf" target="_blank" rel="noreferrer">Plan from Zion Information Guide ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> It delivers most of the famous elevation and drama without requiring an Angels Landing permit.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="permitted exposed ridge hike">
-      <figure class="photo "><img src="assets/images/production/angels-landing.jpg" alt="Angels Landing chain section" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/XPJ442d0NwY" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/angels-landing.jpg" alt="Angels Landing chain section" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">permit-only extension</span></div>
         <p class="meta">permitted exposed ridge hike · +1–2 hr beyond Scout</p>
         <h4>Angels Landing chain section</h4>
         <p>A narrow, chain-assisted ridge continues from Scout Lookout to the iconic summit above Zion Canyon.</p>
-        <p class="why"><b>Why it earns the stop.</b> A rare standout for hikers comfortable with extreme exposure; apply in the day-before lottery and skip in bad weather.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm" target="_blank" rel="noreferrer">Plan from Angels Landing Permits ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A rare standout for hikers comfortable with extreme exposure; apply in the day-before lottery and skip in bad weather.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="moderate canyon-side loop">
-      <figure class="photo "><img src="assets/images/production/emerald-pools.jpg" alt="Kayenta + Emerald Pools" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://www.citrusmilo.com/zionguide/emeraldpools.php" target="_blank" rel="noreferrer">citrusmilo.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/emerald-pools.jpg" alt="Kayenta + Emerald Pools" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">best gentler alternative</span></div>
         <p class="meta">moderate canyon-side loop · 2–3 hr</p>
         <h4>Kayenta + Emerald Pools</h4>
         <p>A ledge trail links the Grotto to alcoves, pools and waterfalls opposite the main canyon walls.</p>
-        <p class="why"><b>Why it earns the stop.</b> A flexible half-day with easy shuttle access; water flow is seasonal and swimming is prohibited.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Plan from Zion Trail Access Information ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A flexible half-day with easy shuttle access; water flow is seasonal and swimming is prohibited.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="paved river walk">
-      <figure class="photo "><img src="assets/images/production/parus-sunset.jpg" alt="Pa&#x27;rus Trail at sunset" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://www.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">nps.gov ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/parus-sunset.jpg" alt="Pa&#x27;rus Trail at sunset" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">easy evening finish</span></div>
         <p class="meta">paved river walk · 60–90 min</p>
         <h4>Pa&#x27;rus Trail at sunset</h4>
         <p>A nearly level path follows the Virgin River to classic evening views of the Watchman.</p>
-        <p class="why"><b>Why it earns the stop.</b> Start from camp or the visitor center and finish the day without another shuttle commitment.</p>
-        <a class="source" href="https://home.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Plan from Zion Sunrise and Sunset ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Start from camp or the visitor center and finish the day without another shuttle commitment.</p>
+        <a class="source" href="https://home.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="moderate lower-canyon hike">
-      <figure class="photo "><img src="assets/images/production/watchman-trail.jpg" alt="Watchman Trail" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://theworldpursuit.com/watchman-trail-zion/" target="_blank" rel="noreferrer">theworldpursuit.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/watchman-trail.jpg" alt="Watchman Trail" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">shuttle-free swap</span></div>
         <p class="meta">moderate lower-canyon hike · 2–3 hr</p>
         <h4>Watchman Trail</h4>
         <p>A 3.3-mile loop climbs above the visitor center to views of the Towers of the Virgin, Springdale and lower canyon.</p>
-        <p class="why"><b>Why it earns the stop.</b> The best self-starting alternative if shuttle crowds or timing undermine the main-canyon plan.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Plan from Zion Trail Access Information ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The best self-starting alternative if shuttle crowds or timing undermine the main-canyon plan.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section><section class="day" id="day-11">
       <header class="day-head">
         <div class="day-stamp"><span>Wed · Nov 4</span><b>ZION-RIVER</b></div>
-        <div><p class="kicker">Full flexible day</p><h3>The river day—or the dry-land backup</h3><p class="route">Temple of Sinawava and Zion Canyon</p></div>
+        <div><p class="kicker">Full flexible day</p><h3>The Narrows, with dry-land alternatives</h3><p class="route">Temple of Sinawava and Zion Canyon</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>The Narrows is entirely condition-dependent in November. If water, flash-flood, cold or cyanobacteria guidance is wrong, use Riverside Walk plus the dry-land alternatives without regret.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="river hike in slot canyon">
-      <figure class="photo feature-photo"><img src="assets/images/production/the-narrows.jpg" alt="The Narrows, bottom-up" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/wjXI1aBBanc" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">≈</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <strong>18° / 3°C <i>64° / 37°F</i></strong><p>Air may be pleasant while the Narrows remains cold. Check flow, flash-flood, cyanobacteria and gear guidance that morning.</p><a href="https://www.nps.gov/zion/planyourvisit/weather-and-climate.htm" target="_blank" rel="noreferrer">Zion Weather and Climate ↗</a></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>The Narrows is entirely condition-dependent in November. If water, flash-flood, cold or cyanobacteria guidance is wrong, use Riverside Walk plus the dry-land alternatives without regret.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/the-narrows.jpg" alt="The Narrows, bottom-up" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">river hike in slot canyon · 3–6 hr</p>
         <h4>The Narrows, bottom-up</h4>
         <p>Hike directly in the Virgin River between sheer walls, turning around whenever cold, depth or fatigue says so.</p>
-        <p class="why"><b>Why it earns the stop.</b> Zion&#x27;s most singular experience, but not automatically the right choice in cold fall water.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/narrowssafety.htm" target="_blank" rel="noreferrer">Plan from The Narrows Safety ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Zion&#x27;s most singular experience, but not automatically the right choice in cold fall water.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/narrowssafety.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="easy canyon-end walk">
-      <figure class="photo "><img src="assets/images/production/riverside-walk.jpg" alt="Riverside Walk" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/3-y3ouvFhwI" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/riverside-walk.jpg" alt="Riverside Walk" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">all-weather canyon core</span></div>
         <p class="meta">easy canyon-end walk · 1.5–2 hr</p>
         <h4>Riverside Walk</h4>
         <p>A paved 2.2-mile round trip follows the Virgin River beneath hanging gardens to the start of the Narrows.</p>
-        <p class="why"><b>Why it earns the stop.</b> Worth doing even if nobody enters the water, and easy to combine with another shorter trail.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf" target="_blank" rel="noreferrer">Plan from Zion Information Guide ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> Worth doing even if nobody enters the water, and easy to combine with another shorter trail.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="quiet mesa-and-canyon hike">
-      <figure class="photo "><img src="assets/images/production/sand-bench.jpg" alt="Sand Bench Trail" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://www.citrusmilo.com/zionguide/sandbenchpix.php" target="_blank" rel="noreferrer">citrusmilo.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/sand-bench.jpg" alt="Sand Bench Trail" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">dry-land replacement</span></div>
         <p class="meta">quiet mesa-and-canyon hike · 3–4 hr</p>
         <h4>Sand Bench Trail</h4>
         <p>A sandy route climbs onto a massive ancient landslide beneath the Sentinel with unusual angles on Zion Canyon.</p>
-        <p class="why"><b>Why it earns the stop.</b> A substantial, often quieter substitute when the Narrows is unsafe or unappealing.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf" target="_blank" rel="noreferrer">Plan from Zion Information Guide ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A substantial, often quieter substitute when the Narrows is unsafe or unappealing.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="short ridge hike">
-      <figure class="photo "><img src="assets/images/production/timber-creek.jpg" alt="Timber Creek Overlook, Kolob Canyons" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:South_from_midway_along_Timber_Creek_Overlook_Trail,_Oct_16.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/timber-creek.jpg" alt="Timber Creek Overlook, Kolob Canyons" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#04</span><span class="badge">western-district swap</span></div>
         <p class="meta">short ridge hike · 1–1.5 hr plus drive</p>
         <h4>Timber Creek Overlook, Kolob Canyons</h4>
         <p>A short ridge walk at Zion&#x27;s northwest corner looks across red-finger canyons toward the Pine Valley Mountains.</p>
-        <p class="why"><b>Why it earns the stop.</b> A dramatically different Zion scene, but it replaces most of a main-canyon day because of the drive.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Plan from Zion Trail Access Information ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A dramatically different Zion scene, but it replaces most of a main-canyon day because of the drive.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="cultural stop and viewpoint">
-      <figure class="photo "><img src="assets/images/production/zion-museum.jpg" alt="Human History Museum patio" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Zion_Human_History_Museum,_Zion_National_Park,_Utah_(1026270596).jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/zion-museum.jpg" alt="Human History Museum patio" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#05</span><span class="badge">bad-weather reset</span></div>
         <p class="meta">cultural stop and viewpoint · 30–60 min</p>
         <h4>Human History Museum patio</h4>
         <p>Compact exhibits connect people to the canyon, while the patio holds one of the easiest Towers of the Virgin views.</p>
-        <p class="why"><b>Why it earns the stop.</b> A useful pause when weather or tired legs shorten the day.</p>
-        <a class="source" href="https://www.nps.gov/zion/planyourvisit/planning-guide.htm" target="_blank" rel="noreferrer">Plan from Zion Planning Guide ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A useful pause when weather or tired legs shorten the day.</p>
+        <a class="source" href="https://www.nps.gov/zion/planyourvisit/planning-guide.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section><section class="day" id="day-12">
       <header class="day-head">
         <div class="day-stamp"><span>Thu · Nov 5</span><b>ZION-LV</b></div>
-        <div><p class="kicker">Return day</p><h3>Back to Las Vegas</h3><p class="route">Zion → Las Vegas · ~165 mi · 2.5–3 hr · gain 1 clock hr</p></div>
+        <div><p class="kicker">Return day</p><h3>Zion morning and the drive to Las Vegas</h3><p class="route">Zion → Las Vegas · ~165 mi · 2.5–3 hr · gain 1 clock hr</p></div>
       </header>
-      <div class="tape-note"><span>HOW TO USE THE DAY</span><p>The rental return cutoff is the fixed point. Choose at most one short morning walk or roadside break; fuel, waste, cleaning and inspection are part of the drive time.</p></div>
-      <div class="attraction-grid"><article class="attraction feature" data-kind="easy river walk">
-      <figure class="photo feature-photo"><img src="assets/images/production/parus-dawn.jpg" alt="Pa&#x27;rus Trail dawn walk" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Zion_National_Park_-_HCP_-_October_02,_2022_-_004_-_Pa%27rus_Trail.jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+      <aside class="weather-card">
+      <div class="weather-icon" aria-hidden="true">☀</div>
+      <div><span class="weather-label">TYPICAL CONDITIONS · PLANNING NORMALS</span>
+      <div class="weather-endpoints"><div><span>Zion</span><strong>18° / 3°C <i>64° / 37°F</i></strong><a href="https://www.nps.gov/zion/planyourvisit/weather-and-climate.htm" target="_blank" rel="noreferrer">Zion Weather and Climate ↗</a></div><div><span>Las Vegas</span><strong>22° / 11°C <i>72° / 52°F</i></strong><a href="https://www.weather.gov/vef/lasvegas_climate_book" target="_blank" rel="noreferrer">Las Vegas Climate Book — Daily Temperature Normals ↗</a></div></div><p>Temperatures usually rise as the route drops toward Las Vegas; keep the morning plan short.</p><p class="weather-basis">Zion November monthly normal and Las Vegas airport November 5 daily normal.</p></div>
+    </aside>
+      <div class="tape-note"><span>DAY PLAN</span><p>The rental return cutoff is the fixed point. Choose at most one short morning walk or roadside break; fuel, waste, cleaning and inspection are part of the drive time.</p></div>
+      <div class="attraction-grid"><article class="attraction feature">
+      <figure class="photo feature-photo"><img src="assets/images/production/parus-dawn.jpg" alt="Pa&#x27;rus Trail dawn walk" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
-        <div class="rank-line"><span class="rank">#01</span><span class="badge">MAKE THIS THE ANCHOR</span></div>
+        <div class="rank-line"><span class="rank">#01</span><span class="badge">TOP PRIORITY</span></div>
         <p class="meta">easy river walk · 30–60 min</p>
         <h4>Pa&#x27;rus Trail dawn walk</h4>
         <p>A brief out-and-back from the visitor-center area catches soft light on lower Zion without moving the campervan far.</p>
-        <p class="why"><b>Why it earns the stop.</b> The cleanest final experience because it is easy to shorten instantly.</p>
-        <a class="source" href="https://home.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Plan from Zion Sunrise and Sunset ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> The cleanest final experience because it is easy to shorten instantly.</p>
+        <a class="source" href="https://home.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="roadside viewpoints">
-      <figure class="photo "><img src="assets/images/production/towers-of-virgin.jpg" alt="Canyon Junction / Towers of the Virgin views" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://commons.wikimedia.org/wiki/File:Towers_of_the_Virgin,_Zion_Human_History_Museum,_Zion_National_Park,_Utah_(1025613967).jpg" target="_blank" rel="noreferrer">commons.wikimedia.org ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/towers-of-virgin.jpg" alt="Canyon Junction / Towers of the Virgin views" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#02</span><span class="badge">quick photo option</span></div>
         <p class="meta">roadside viewpoints · 15–30 min</p>
         <h4>Canyon Junction / Towers of the Virgin views</h4>
         <p>Classic lower-canyon walls rise directly above the road and museum area.</p>
-        <p class="why"><b>Why it earns the stop.</b> A visual farewell with almost no schedule risk; stop only in legal parking.</p>
-        <a class="source" href="https://home.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Plan from Zion Sunrise and Sunset ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A visual farewell with almost no schedule risk; stop only in legal parking.</p>
+        <a class="source" href="https://home.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
-    </article><article class="attraction" data-kind="state-park road and short walks">
-      <figure class="photo "><img src="assets/images/production/valley-of-fire.jpg" alt="Valley of Fire scenic drive" loading="lazy" decoding="async"><figcaption>Photo reference · <a href="https://unsplash.com/photos/ZfcYwp-PcXM" target="_blank" rel="noreferrer">unsplash.com ↗</a></figcaption></figure>
+    </article><article class="attraction">
+      <figure class="photo "><img src="assets/images/production/valley-of-fire.jpg" alt="Valley of Fire scenic drive" loading="lazy" decoding="async"></figure>
       <div class="attraction-copy">
         <div class="rank-line"><span class="rank">#03</span><span class="badge">only with late return</span></div>
         <p class="meta">state-park road and short walks · 2.5–4 hr detour</p>
         <h4>Valley of Fire scenic drive</h4>
         <p>Red sandstone fins, Elephant Rock and the White Domes road form a vivid final Nevada chapter.</p>
-        <p class="why"><b>Why it earns the stop.</b> A genuine attraction, but it is a full detour that must be approved by the rental-return schedule—not squeezed in casually.</p>
-        <a class="source" href="https://parks.nv.gov/forms/Map_-_UPDATED_5-9-24.pdf" target="_blank" rel="noreferrer">Plan from Valley of Fire Park Map ↗</a>
+        <p class="why"><b>Why it is worth the stop.</b> A genuine attraction, but it is a full detour that must be approved by the rental-return schedule—not squeezed in casually.</p>
+        <a class="source" href="https://parks.nv.gov/forms/Map_-_UPDATED_5-9-24.pdf" target="_blank" rel="noreferrer">Official planning information ↗</a>
       </div>
     </article></div>
     </section></div>
     </section>
-<section class="sources" id="sources"><div class="shell sources-grid"><div><p class="kicker">Research trail</p><h2>Sources & credits.</h2><p>Route logic comes from the supplied trip decision log. Access, trail and park guidance was checked against current official sources. Photographs are planning references; rights remain with their creators under the linked source terms.</p></div><ul class="source-list"><li><strong>Southern Utah–Arizona Campervan Loop — Decision Log</strong><span>supplied primary itinerary · local planning source</span></li><li><strong>Campervan Briefing for the Southwest US Trip</strong><span>supplied supporting brief · local planning source</span></li><li><strong>Las Vegas Campervan Candidate Log</strong><span>supplied reference · local planning source</span></li><li><a href="https://www.nps.gov/grca/planyourvisit/things2do.htm" target="_blank" rel="noreferrer">Grand Canyon — Things to Do</a><span>official NPS</span></li><li><a href="https://www.nps.gov/grca/planyourvisit/day-hiking.htm" target="_blank" rel="noreferrer">Grand Canyon — Day Hiking</a><span>official NPS</span></li><li><a href="https://home.nps.gov/grca/learn/management/hermit.htm" target="_blank" rel="noreferrer">Grand Canyon — Hermit Road</a><span>official NPS</span></li><li><a href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Grand Canyon — Desert View Drive</a><span>official NPS</span></li><li><a href="https://historic66az.com/" target="_blank" rel="noreferrer">Historic Route 66 Association of Arizona</a><span>regional nonprofit</span></li><li><a href="https://navajonationparks.org/" target="_blank" rel="noreferrer">Monument Valley Navajo Tribal Park</a><span>official Navajo Nation Parks</span></li><li><a href="https://navajonationparks.org/guided-tour-operators/monument-valley-tour-operators/" target="_blank" rel="noreferrer">Monument Valley Authorized Tour Operators</a><span>official Navajo Nation Parks</span></li><li><a href="https://www.visitutah.com/articles/the-wildcat-trail-of-monument-valley" target="_blank" rel="noreferrer">Wildcat Trail of Monument Valley</a><span>state tourism</span></li><li><a href="https://www.visitutah.com/places-to-go/parks-outdoors/monument-valley" target="_blank" rel="noreferrer">Monument Valley</a><span>state tourism</span></li><li><a href="https://www.blm.gov/visit/wilson-arch" target="_blank" rel="noreferrer">Wilson Arch</a><span>official BLM</span></li><li><a href="https://www.discovermoab.com/scenic-byways/" target="_blank" rel="noreferrer">Moab Area Scenic Byways</a><span>local tourism</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/delicate-arch.htm" target="_blank" rel="noreferrer">Delicate Arch</a><span>official NPS</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/devils-garden.htm" target="_blank" rel="noreferrer">Devils Garden</a><span>official NPS</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/the-windows.htm" target="_blank" rel="noreferrer">The Windows Section</a><span>official NPS</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/placestogo.htm" target="_blank" rel="noreferrer">Arches — Places to Go</a><span>official NPS</span></li><li><a href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Canyonlands — Trip Itineraries</a><span>official NPS</span></li><li><a href="https://stateparks.utah.gov/parks/dead-horse/hiking-at-dead-horse-point/" target="_blank" rel="noreferrer">Dead Horse Point Rim Hiking Trails</a><span>official Utah State Parks</span></li><li><a href="https://www.nps.gov/care/planyourvisit/trailguide.htm" target="_blank" rel="noreferrer">Capitol Reef Trail Guide</a><span>official NPS</span></li><li><a href="https://www.nps.gov/care/learn/historyculture/fruita-rural-historic-district.htm" target="_blank" rel="noreferrer">Fruita Historic District</a><span>official NPS</span></li><li><a href="https://www.nps.gov/places/capitol-reef-petroglyph-panel.htm" target="_blank" rel="noreferrer">Petroglyph Panel</a><span>official NPS</span></li><li><a href="https://www.nps.gov/care/planyourvisit/roads.htm" target="_blank" rel="noreferrer">Capitol Reef Roads</a><span>official NPS</span></li><li><a href="https://www.recreation.gov/gateways/13836" target="_blank" rel="noreferrer">Scenic Byway 12</a><span>official recreation portal</span></li><li><a href="https://www.blm.gov/visit/head-rocks-overlook-wayside" target="_blank" rel="noreferrer">Head of the Rocks Overlook</a><span>official BLM</span></li><li><a href="https://travel.utah.gov/wp-content/uploads/Scenic-Byway-12MANAGEMENTPLANLOWRES.pdf" target="_blank" rel="noreferrer">Scenic Byway 12 Corridor Plan</a><span>State of Utah</span></li><li><a href="https://stateparks.utah.gov/parks/anasazi/" target="_blank" rel="noreferrer">Anasazi State Park Museum</a><span>official Utah State Parks</span></li><li><a href="https://www.blm.gov/visit/calf-creek-recreation-area-campground" target="_blank" rel="noreferrer">Calf Creek Recreation Area</a><span>official BLM</span></li><li><a href="https://www.nps.gov/brca/planyourvisit/scenicdrive.htm" target="_blank" rel="noreferrer">Bryce Canyon — Scenic Drive</a><span>official NPS</span></li><li><a href="https://www.nps.gov/brca/planyourvisit/day-hikes.htm" target="_blank" rel="noreferrer">Bryce Canyon — Day Hikes</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Zion — Canyon Overlook Trail</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf" target="_blank" rel="noreferrer">Zion Information Guide</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm" target="_blank" rel="noreferrer">Angels Landing Permits</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Zion Trail Access Information</a><span>official NPS</span></li><li><a href="https://home.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Zion Sunrise and Sunset</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/narrowssafety.htm" target="_blank" rel="noreferrer">The Narrows Safety</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/planning-guide.htm" target="_blank" rel="noreferrer">Zion Planning Guide</a><span>official NPS</span></li><li><a href="https://parks.nv.gov/forms/Map_-_UPDATED_5-9-24.pdf" target="_blank" rel="noreferrer">Valley of Fire Park Map</a><span>official Nevada State Parks</span></li></ul></div></section></main>
-<footer class="footer">DESERT LOOP 26 · Built for local use and GitHub Pages · Recheck every live condition before departure.</footer></body></html>
+<section class="sources" id="sources"><div class="shell sources-grid"><div><p class="kicker">Research and credits</p><h2>Planning sources</h2><p>Route logic comes from the supplied trip notes. Trail, access and climate guidance was checked against official park and agency sources. Recheck live alerts before each day.</p></div><ul class="source-list"><li><strong>Southern Utah–Arizona Campervan Loop — Decision Log</strong><span>supplied primary itinerary</span></li><li><strong>Campervan Briefing for the Southwest US Trip</strong><span>supplied supporting brief</span></li><li><strong>Las Vegas Campervan Candidate Log</strong><span>supplied reference</span></li><li><a href="https://www.nps.gov/grca/planyourvisit/things2do.htm" target="_blank" rel="noreferrer">Grand Canyon — Things to Do</a><span>official NPS</span></li><li><a href="https://www.nps.gov/grca/planyourvisit/day-hiking.htm" target="_blank" rel="noreferrer">Grand Canyon — Day Hiking</a><span>official NPS</span></li><li><a href="https://home.nps.gov/grca/learn/management/hermit.htm" target="_blank" rel="noreferrer">Grand Canyon — Hermit Road</a><span>official NPS</span></li><li><a href="https://www.nps.gov/grca/planyourvisit/desert-view-drive.htm" target="_blank" rel="noreferrer">Grand Canyon — Desert View Drive</a><span>official NPS</span></li><li><a href="https://historic66az.com/" target="_blank" rel="noreferrer">Historic Route 66 Association of Arizona</a><span>regional nonprofit</span></li><li><a href="https://navajonationparks.org/" target="_blank" rel="noreferrer">Monument Valley Navajo Tribal Park</a><span>official Navajo Nation Parks</span></li><li><a href="https://navajonationparks.org/guided-tour-operators/monument-valley-tour-operators/" target="_blank" rel="noreferrer">Monument Valley Authorized Tour Operators</a><span>official Navajo Nation Parks</span></li><li><a href="https://www.visitutah.com/articles/the-wildcat-trail-of-monument-valley" target="_blank" rel="noreferrer">Wildcat Trail of Monument Valley</a><span>state tourism</span></li><li><a href="https://www.visitutah.com/places-to-go/parks-outdoors/monument-valley" target="_blank" rel="noreferrer">Monument Valley</a><span>state tourism</span></li><li><a href="https://www.blm.gov/visit/wilson-arch" target="_blank" rel="noreferrer">Wilson Arch</a><span>official BLM</span></li><li><a href="https://www.discovermoab.com/scenic-byways/" target="_blank" rel="noreferrer">Moab Area Scenic Byways</a><span>local tourism</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/delicate-arch.htm" target="_blank" rel="noreferrer">Delicate Arch</a><span>official NPS</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/devils-garden.htm" target="_blank" rel="noreferrer">Devils Garden</a><span>official NPS</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/the-windows.htm" target="_blank" rel="noreferrer">The Windows Section</a><span>official NPS</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/placestogo.htm" target="_blank" rel="noreferrer">Arches — Places to Go</a><span>official NPS</span></li><li><a href="https://www.nps.gov/cany/planyourvisit/itineraries.htm" target="_blank" rel="noreferrer">Canyonlands — Trip Itineraries</a><span>official NPS</span></li><li><a href="https://stateparks.utah.gov/parks/dead-horse/hiking-at-dead-horse-point/" target="_blank" rel="noreferrer">Dead Horse Point Rim Hiking Trails</a><span>official Utah State Parks</span></li><li><a href="https://www.nps.gov/care/planyourvisit/trailguide.htm" target="_blank" rel="noreferrer">Capitol Reef Trail Guide</a><span>official NPS</span></li><li><a href="https://www.nps.gov/care/learn/historyculture/fruita-rural-historic-district.htm" target="_blank" rel="noreferrer">Fruita Historic District</a><span>official NPS</span></li><li><a href="https://www.nps.gov/places/capitol-reef-petroglyph-panel.htm" target="_blank" rel="noreferrer">Petroglyph Panel</a><span>official NPS</span></li><li><a href="https://www.nps.gov/care/planyourvisit/roads.htm" target="_blank" rel="noreferrer">Capitol Reef Roads</a><span>official NPS</span></li><li><a href="https://www.recreation.gov/gateways/13836" target="_blank" rel="noreferrer">Scenic Byway 12</a><span>official recreation portal</span></li><li><a href="https://www.blm.gov/visit/head-rocks-overlook-wayside" target="_blank" rel="noreferrer">Head of the Rocks Overlook</a><span>official BLM</span></li><li><a href="https://travel.utah.gov/wp-content/uploads/Scenic-Byway-12MANAGEMENTPLANLOWRES.pdf" target="_blank" rel="noreferrer">Scenic Byway 12 Corridor Plan</a><span>State of Utah</span></li><li><a href="https://stateparks.utah.gov/parks/anasazi/" target="_blank" rel="noreferrer">Anasazi State Park Museum</a><span>official Utah State Parks</span></li><li><a href="https://www.blm.gov/visit/calf-creek-recreation-area-campground" target="_blank" rel="noreferrer">Calf Creek Recreation Area</a><span>official BLM</span></li><li><a href="https://www.nps.gov/brca/planyourvisit/scenicdrive.htm" target="_blank" rel="noreferrer">Bryce Canyon — Scenic Drive</a><span>official NPS</span></li><li><a href="https://www.nps.gov/brca/planyourvisit/day-hikes.htm" target="_blank" rel="noreferrer">Bryce Canyon — Day Hikes</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Zion — Canyon Overlook Trail</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf" target="_blank" rel="noreferrer">Zion Information Guide</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm" target="_blank" rel="noreferrer">Angels Landing Permits</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/trail-access-information.htm" target="_blank" rel="noreferrer">Zion Trail Access Information</a><span>official NPS</span></li><li><a href="https://home.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Zion Sunrise and Sunset</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/narrowssafety.htm" target="_blank" rel="noreferrer">The Narrows Safety</a><span>official NPS</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/planning-guide.htm" target="_blank" rel="noreferrer">Zion Planning Guide</a><span>official NPS</span></li><li><a href="https://parks.nv.gov/forms/Map_-_UPDATED_5-9-24.pdf" target="_blank" rel="noreferrer">Valley of Fire Park Map</a><span>official Nevada State Parks</span></li><li><a href="https://www.nps.gov/grca/learn/nature/weather.htm" target="_blank" rel="noreferrer">Grand Canyon Weather</a><span>official NPS climate normals</span></li><li><a href="https://www.nps.gov/arch/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Arches Weather</a><span>official NPS climate normals</span></li><li><a href="https://www.nps.gov/care/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Capitol Reef Weather</a><span>official NPS climate normals</span></li><li><a href="https://www.nps.gov/brca/planyourvisit/weather.htm" target="_blank" rel="noreferrer">Bryce Canyon Weather</a><span>official NPS climate normals</span></li><li><a href="https://www.nps.gov/zion/planyourvisit/weather-and-climate.htm" target="_blank" rel="noreferrer">Zion Weather and Climate</a><span>official NPS climate normals</span></li><li><a href="https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals" target="_blank" rel="noreferrer">U.S. Climate Normals — Kayenta-area station</a><span>official NOAA 1991–2020 station normals</span></li><li><a href="https://www.weather.gov/vef/lasvegas_climate_book" target="_blank" rel="noreferrer">Las Vegas Climate Book — Daily Temperature Normals</a><span>official NWS 1991–2020 daily normals</span></li></ul><details class="photo-credit-panel"><summary>Image credits · 68 photographs</summary><ul class="photo-credit-list"><li><span>Anasazi Museum</span><a href="https://commons.wikimedia.org/wiki/File:Pithouse_in_Anasazi_Indian_State_Park_DyeClan.com_-_panoramio_(1).jpg" target="_blank" rel="noreferrer">Pithouse in Anasazi Indian State Park DyeClan.com - panoramio (1).jpg ↗</a></li><li><span>Angels Landing</span><a href="https://unsplash.com/photos/XPJ442d0NwY" target="_blank" rel="noreferrer">View from Angels Landing trail ↗</a></li><li><span>Balanced Rock</span><a href="https://commons.wikimedia.org/wiki/File:Balanced_Rock_sunset.jpg" target="_blank" rel="noreferrer">Balanced Rock sunset.jpg ↗</a></li><li><span>Bighorn Overlook</span><a href="https://commons.wikimedia.org/wiki/File:Colorado_River_at_Dead_Horse_Point_(3787442082).jpg" target="_blank" rel="noreferrer">Colorado River at Dead Horse Point (3787442082).jpg ↗</a></li><li><span>Bright Angel</span><a href="https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park,_Top_of_Bright_Angel_Trail_0069p_-_Flickr_-_Grand_Canyon_NPS.jpg" target="_blank" rel="noreferrer">Grand Canyon National Park, Top of Bright Angel Trail 0069p - Flickr - Grand Canyon NPS.jpg ↗</a></li><li><span>Bryce Hero</span><a href="https://unsplash.com/photos/Dv-ZFbksh30" target="_blank" rel="noreferrer">Snowy Bryce sunrise ↗</a></li><li><span>Bryce Rim</span><a href="https://unsplash.com/photos/sOs_R0LsOVE" target="_blank" rel="noreferrer">Bryce rim at first light ↗</a></li><li><span>Bryce Sunset</span><a href="https://unsplash.com/photos/VxmGQxsapCM" target="_blank" rel="noreferrer">Bryce amphitheater ↗</a></li><li><span>Calf Creek Falls</span><a href="https://commons.wikimedia.org/wiki/File:Calf_Creek_falls.jpg" target="_blank" rel="noreferrer">Calf Creek falls.jpg ↗</a></li><li><span>Canyon Overlook Zion</span><a href="https://commons.wikimedia.org/wiki/File:Overlook_trail_view_-_Zion_Canyon.jpg" target="_blank" rel="noreferrer">Overlook trail view - Zion Canyon.jpg ↗</a></li><li><span>Capitol Petroglyphs</span><a href="https://www.nps.gov/places/petroglyph-panel.htm" target="_blank" rel="noreferrer">Petroglyph Panel (U.S. National Park Service) ↗</a></li><li><span>Capitol Reef Hero</span><a href="https://unsplash.com/photos/-lERugCXR3w" target="_blank" rel="noreferrer">Road into Capitol Reef ↗</a></li><li><span>Capitol Scenic Drive</span><a href="https://unsplash.com/photos/WEB6rgfAPHo" target="_blank" rel="noreferrer">Scenic road through Capitol Reef ↗</a></li><li><span>Capitol Sunset Point</span><a href="https://schoandjo.com/sunset-point-capitol-reef/" target="_blank" rel="noreferrer">Capitol Reef&#x27;s Best Sunset Spot: Sunset Point Overlook ↗</a></li><li><span>Cover Hero</span><a href="https://unsplash.com/photos/hniuowbXbBY" target="_blank" rel="noreferrer">Long desert road toward Monument Valley ↗</a></li><li><span>Cover Postcard Campervan</span><a href="https://unsplash.com/photos/adyiJOcVupA" target="_blank" rel="noreferrer">Camper van with open doors in a desert landscape ↗</a></li><li><span>Dead Horse Overlook</span><a href="https://unsplash.com/photos/mjzmWUD9a78" target="_blank" rel="noreferrer">Colorado River bend at Dead Horse Point ↗</a></li><li><span>Delicate Arch</span><a href="https://unsplash.com/photos/Rdk9TnvsTV4" target="_blank" rel="noreferrer">Delicate Arch at sunset ↗</a></li><li><span>Desert View</span><a href="https://unsplash.com/photos/H70TJBAUIUU" target="_blank" rel="noreferrer">Desert View Watchtower from Navajo Point ↗</a></li><li><span>Double Arch</span><a href="https://unsplash.com/photos/CYKapaWkNyA" target="_blank" rel="noreferrer">Double Arch in Arches National Park ↗</a></li><li><span>Double O Arch</span><a href="https://commons.wikimedia.org/wiki/File:Double-O-Arch_Arches_National_Park_2.jpg" target="_blank" rel="noreferrer">Double-O-Arch Arches National Park 2.jpg ↗</a></li><li><span>Emerald Pools</span><a href="https://www.citrusmilo.com/zionguide/emeraldpools.php" target="_blank" rel="noreferrer">Emerald Pools Trail - Joe ↗</a></li><li><span>Forrest Gump Point</span><a href="https://unsplash.com/photos/fM58mVQaPrE" target="_blank" rel="noreferrer">US-163 at Forrest Gump Point ↗</a></li><li><span>Fruita Orchard</span><a href="https://alanstenbackphotography.us/blog/discovering-the-beauty-of-capitol-reef-national-park/" target="_blank" rel="noreferrer">Discovering the Beauty of Capitol Reef National Park | Landscape &amp; Astrophotography Workshops | Alan Stenback Photography ↗</a></li><li><span>Grand Canyon Hero</span><a href="https://unsplash.com/photos/KAbpjQEOHeY" target="_blank" rel="noreferrer">Grand Canyon at sunrise ↗</a></li><li><span>Grand View Canyonlands</span><a href="https://unsplash.com/photos/a6BZse3oxiw" target="_blank" rel="noreferrer">Grand View Point canyon maze ↗</a></li><li><span>Grand Wash</span><a href="https://unicornadventure.blog/2024/10/31/a-guide-to-hiking-the-grand-wash-trail-in-capitol-reef-national-park-utah/" target="_blank" rel="noreferrer">Grand Wash Trail Hiking Guide - Capitol Reef National Park ↗</a></li><li><span>Grandview Point</span><a href="https://commons.wikimedia.org/wiki/File:Le_Grand_Canyon_du_Colorado_panorama_en_2016.JPG" target="_blank" rel="noreferrer">Le Grand Canyon du Colorado panorama en 2016.JPG ↗</a></li><li><span>Green River Overlook</span><a href="https://commons.wikimedia.org/wiki/File:Rock_Formations_near_Green_River_Overlook,_Canyonlands_20110815_1.jpg" target="_blank" rel="noreferrer">Rock Formations near Green River Overlook, Canyonlands 20110815 1.jpg ↗</a></li><li><span>Head Of Rocks</span><a href="https://commons.wikimedia.org/wiki/File:Utah_State_Route_12.jpg" target="_blank" rel="noreferrer">Utah State Route 12.jpg ↗</a></li><li><span>Hickman Bridge</span><a href="https://unsplash.com/photos/Kdu1gxxua5A" target="_blank" rel="noreferrer">Hickman Bridge ↗</a></li><li><span>Highway12 Hogsback</span><a href="https://commons.wikimedia.org/wiki/File:Scenic_Byway_12_-_Scenic_Byway_12_Across_the_Hogsback_-_NARA_-_7721855.jpg" target="_blank" rel="noreferrer">Scenic Byway 12 - Scenic Byway 12 Across the Hogsback - NARA - 7721855.jpg ↗</a></li><li><span>Hopi Point</span><a href="https://commons.wikimedia.org/wiki/File:Grand_Canyon_Hopi_Point_with_rainbow_2013.jpg" target="_blank" rel="noreferrer">Grand Canyon Hopi Point with rainbow 2013.jpg ↗</a></li><li><span>Inspiration Point Bryce</span><a href="https://unsplash.com/photos/xWtAe1fIYew" target="_blank" rel="noreferrer">Bryce Canyon from Inspiration Point ↗</a></li><li><span>Landscape Arch</span><a href="https://unsplash.com/photos/6UVyp0OVGys" target="_blank" rel="noreferrer">Landscape Arch in Devils Garden ↗</a></li><li><span>Larb Hollow</span><a href="https://commons.wikimedia.org/wiki/File:Scenic_Byway_12_-_View_Northeast_from_Larb_Hollow_Overlook_-_NARA_-_7721880.jpg" target="_blank" rel="noreferrer">Scenic Byway 12 - View Northeast from Larb Hollow Overlook - NARA - 7721880.jpg ↗</a></li><li><span>Mather Point</span><a href="https://unsplash.com/photos/HnfAzpOUHls" target="_blank" rel="noreferrer">Mather Point and distant storm ↗</a></li><li><span>Mesa Arch</span><a href="https://unsplash.com/photos/MqDlQ_WdawI" target="_blank" rel="noreferrer">Mesa Arch at sunrise ↗</a></li><li><span>Moab Hero</span><a href="https://unsplash.com/photos/QsamLCQn8V4" target="_blank" rel="noreferrer">Delicate Arch with distant mountains ↗</a></li><li><span>Moab River</span><a href="https://www.discovermoab.com/blog/post/moabs-hidden-gems-kane-creek-boulevard/" target="_blank" rel="noreferrer">Moab’s hidden gems: Spend an entire day exploring Kane Creek Boulevard ↗</a></li><li><span>Monument Sunset</span><a href="https://unsplash.com/photos/XZWInejJTCM" target="_blank" rel="noreferrer">The Mittens at sunrise ↗</a></li><li><span>Monument Valley Hero</span><a href="https://unsplash.com/photos/k0g5RBU0OKg" target="_blank" rel="noreferrer">West Mitten in warm light ↗</a></li><li><span>Natural Bridge Bryce</span><a href="https://commons.wikimedia.org/wiki/File:Natural_Bridge._Bryce_Canyon_Utah._(30614425236).jpg" target="_blank" rel="noreferrer">Natural Bridge. Bryce Canyon Utah. (30614425236).jpg ↗</a></li><li><span>Navajo Point</span><a href="https://commons.wikimedia.org/wiki/File:View_of_Grand_Canyon_from_Navajo_Point,_GCNP,_AZ_20110810_1.jpg" target="_blank" rel="noreferrer">View of Grand Canyon from Navajo Point, GCNP, AZ 20110810 1.jpg ↗</a></li><li><span>Ooh Aah Point</span><a href="https://unsplash.com/photos/AF0qe_LaF1A" target="_blank" rel="noreferrer">Ooh Aah Point on South Kaibab Trail ↗</a></li><li><span>Park Avenue</span><a href="https://commons.wikimedia.org/wiki/File:Park_Avenue_in_Arches_National_Park_kz02.jpg" target="_blank" rel="noreferrer">Park Avenue in Arches National Park kz02.jpg ↗</a></li><li><span>Parus Dawn</span><a href="https://commons.wikimedia.org/wiki/File:Zion_National_Park_-_HCP_-_October_02,_2022_-_004_-_Pa%27rus_Trail.jpg" target="_blank" rel="noreferrer">Zion National Park - HCP - October 02, 2022 - 004 - Pa&#x27;rus Trail.jpg ↗</a></li><li><span>Parus Sunset</span><a href="https://www.nps.gov/zion/planyourvisit/sunrise-and-sunset.htm" target="_blank" rel="noreferrer">Sunrise and Sunset - Zion National Park (U.S. National Park Service) ↗</a></li><li><span>Pima Point</span><a href="https://commons.wikimedia.org/wiki/File:Sunrise_from_Pima_Point_-_Grand_Canyon_National_Park.jpg" target="_blank" rel="noreferrer">Sunrise from Pima Point - Grand Canyon National Park.jpg ↗</a></li><li><span>Queens Navajo</span><a href="https://unsplash.com/photos/a1QPssvpxyI" target="_blank" rel="noreferrer">Bryce hoodoos under clear sky ↗</a></li><li><span>Riverside Walk</span><a href="https://unsplash.com/photos/3-y3ouvFhwI" target="_blank" rel="noreferrer">Virgin River beneath Narrows walls ↗</a></li><li><span>Sand Bench</span><a href="https://www.citrusmilo.com/zionguide/sandbenchpix.php" target="_blank" rel="noreferrer">Sand Bench Trail Photos - Joe ↗</a></li><li><span>Scout Lookout</span><a href="https://commons.wikimedia.org/wiki/File:Scouts_Lookout,_on_the_way_up_to_Angels_Landing_(Zion_National_Park)_(3443196545).jpg" target="_blank" rel="noreferrer">Scout Lookout on the West Rim Trail ↗</a></li><li><span>Seligman Route66</span><a href="https://commons.wikimedia.org/wiki/File:Seligman.-_Snow_car,_sur_la_Route_66.jpg" target="_blank" rel="noreferrer">Seligman.- Snow car, sur la Route 66.jpg ↗</a></li><li><span>The Narrows</span><a href="https://unsplash.com/photos/wjXI1aBBanc" target="_blank" rel="noreferrer">The Narrows and Virgin River ↗</a></li><li><span>Timber Creek</span><a href="https://commons.wikimedia.org/wiki/File:South_from_midway_along_Timber_Creek_Overlook_Trail,_Oct_16.jpg" target="_blank" rel="noreferrer">South from midway along Timber Creek Overlook Trail, Oct 16.jpg ↗</a></li><li><span>Towers Of Virgin</span><a href="https://commons.wikimedia.org/wiki/File:Towers_of_the_Virgin,_Zion_Human_History_Museum,_Zion_National_Park,_Utah_(1025613967).jpg" target="_blank" rel="noreferrer">Towers of the Virgin, Zion Human History Museum, Zion National Park, Utah (1025613967).jpg ↗</a></li><li><span>Trail Of Time</span><a href="https://tot.unm.edu/" target="_blank" rel="noreferrer">Trail of Time ↗</a></li><li><span>Tusayan Pueblo</span><a href="https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Tusayan_Ruin_Ranger-led_Tour_5249_(12759963523).jpg" target="_blank" rel="noreferrer">Grand Canyon National Park Tusayan Ruin Ranger-led Tour 5249 (12759963523).jpg ↗</a></li><li><span>Upheaval Dome</span><a href="https://commons.wikimedia.org/wiki/File:Upheaval_Dome_Canyonlands.jpg" target="_blank" rel="noreferrer">Upheaval Dome Canyonlands.jpg ↗</a></li><li><span>Valley Drive Tour</span><a href="https://commons.wikimedia.org/wiki/File:John_Ford%27s_Point_Monument_Valley_Luca_Galuzzi_2007.jpg" target="_blank" rel="noreferrer">John Ford&#x27;s Point Monument Valley Luca Galuzzi 2007.jpg ↗</a></li><li><span>Valley Of Fire</span><a href="https://unsplash.com/photos/ZfcYwp-PcXM" target="_blank" rel="noreferrer">Fire Canyon and Silica Dome at dusk ↗</a></li><li><span>Watchman Trail</span><a href="https://theworldpursuit.com/watchman-trail-zion/" target="_blank" rel="noreferrer">How To Hike Watchman Trail In Zion National Park ↗</a></li><li><span>Wildcat Trail</span><a href="https://www.visitutah.com/articles/the-wildcat-trail-of-monument-valley" target="_blank" rel="noreferrer">Wildcat Trail | Monument Valley Hiking ↗</a></li><li><span>Wilson Arch</span><a href="https://outofoffice.blog/road-trip-canyonlands-to-monument-valley/" target="_blank" rel="noreferrer">Cedar Mesa: Road Trip Canyonlands to Monument Valley Travel Guide ↗</a></li><li><span>Yavapai Point</span><a href="https://grandcanyon.com/poi/yavapai-geology-museum/" target="_blank" rel="noreferrer">Yavapai Geology Museum | GrandCanyon.com ↗</a></li><li><span>Zion Hero</span><a href="https://unsplash.com/photos/lkw8Mf9U1tQ" target="_blank" rel="noreferrer">Zion Canyon from above in full color ↗</a></li><li><span>Zion Museum</span><a href="https://commons.wikimedia.org/wiki/File:Zion_Human_History_Museum,_Zion_National_Park,_Utah_(1026270596).jpg" target="_blank" rel="noreferrer">Zion Human History Museum, Zion National Park, Utah (1026270596).jpg ↗</a></li></ul></details></div></section></main>
+<footer class="footer">DESERT LOOP 26 · OCTOBER 25 — NOVEMBER 5, 2026 · WEATHER SHOWN AS PLANNING NORMALS</footer>
+<script>(()=>{const board=document.querySelector('.map-board'),path=document.getElementById('routePath'),van=document.getElementById('routeVan');if(!board||!path||!van||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const move=()=>{const r=board.getBoundingClientRect(),vh=innerHeight,start=vh*.62,end=vh*.32-r.height,p=Math.max(0,Math.min(1,(start-r.top)/(start-end))),pt=path.getPointAtLength(path.getTotalLength()*p);van.style.left=pt.x+'%';van.style.top=pt.y+'%'};addEventListener('scroll',move,{passive:true});addEventListener('resize',move);move()})();</script></body></html>
